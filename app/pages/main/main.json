@@ -1,0 +1,9 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "mp-loading": "weui-miniprogram/loading/loading",
+    "mp-msg": "weui-miniprogram/msg/msg",
+    "mp-navigation-bar": "weui-miniprogram/navigation-bar/navigation-bar",
+    "popup": "/components/popup/popup"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "entryPagePath": "pages/main/main",
+  "pages": ["pages/main/main"],
+  "window": {
+    "navigationBarBackgroundColor": "@navBgColor",
+    "navigationBarTextStyle": "@navTextStyle",
+    "navigationBarTitleText": "Demo",
+    "backgroundColor": "@bgColor",
+    "backgroundTextStyle": "@bgTxtStyle",
+    "backgroundColorTop": "@bgColorTop",
+    "backgroundColorBottom": "@bgColorBottom",
+    "pageOrientation": "portrait"
+  },
+  "networkTimeout": {
+    "request": 5000,
+    "connectSocket": 8000,
+    "uploadFile": 8000,
+    "downloadFile": 25000
+  },
+  "debug": true,
+  "resizable": true,
+  "requiredBackgroundModes": ["audio"],
+  "style": "v2",
+  "useExtendedLib": {
+    "weui": true
+  },
+  "darkmode": true,
+  "themeLocation": "style/theme.json",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "singlePage": { "navigationBarFit": "float" }
+}

@@ -1,0 +1,7 @@
+module.exports = {
+  /** 弹窗配置 */
+  popupConfig: {
+    title: "关于",
+    cancel: false,
+  },
+};

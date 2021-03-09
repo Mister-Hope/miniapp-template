@@ -1,0 +1,25 @@
+<wxs src="./main.wxs" module="main" />
+<view class="page" data-weui-theme="{{darkmode? 'dark': ''}}">
+  <mp-navigation-bar back="{{false}}" background="{{darkmode? '#000': '#fff'}}">
+    <view slot="left">
+      <view class="button" hover-class="button-hover" catch:tap="about">
+        <view class="icon-about" />
+      </view>
+    </view>
+    <view slot="center">{{appName}}</view>
+  </mp-navigation-bar>
+  <mp-msg wx:if="{{loaded}}" title="小程序Demo" />
+  <mp-loading wx:else type="circle" />
+</view>
+
+<!-- 歌曲列表 -->
+<popup
+  config="{{main.popupConfig}}"
+  show="{{showPopup}}"
+  catch:confirm="hidePopup"
+  catch:close="hidePopup"
+>
+  <view class="title">小程序模板地址 </view>
+
+  <view class="link">https://github.com/Mister-Hope/miniapp-template </view>
+</popup>
