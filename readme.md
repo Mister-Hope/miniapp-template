@@ -12,6 +12,10 @@
 
 - 使用 `yarn run lint` 或 `npm run lint` 格式化小程序代码
 
+## 提交
+
+模板使用 husky 配合 lint-stage 保证代码在提交时通过校验。你需要使用 `yarn cz` 或 `yarn commit` 命令进行提交。
+
 ## 配置
 
 小程序的配置文件在 `app/config.ts` 下，你可以修改该文件配置小程序的基础信息。

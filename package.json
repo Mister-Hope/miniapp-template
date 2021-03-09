@@ -10,7 +10,7 @@
   "scripts": {
     "build": "gulp build",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 2",
-    "commit": "git cz",
+    "commit": "yarn cz",
     "lint": "yarn run lint:prettier --write && yarn run lint:wxs --write && yarn run lint:wxml --write && yarn run lint:eslint --fix && yarn run lint:style --fix",
     "lint:check": "yarn run lint:prettier && yarn run lint:wxs && yarn run lint:wxml && yarn run lint:eslint && yarn run lint:style",
     "lint:eslint": "eslint --ext .ts,.wxs .",
@@ -28,6 +28,7 @@
     "@types/node": "14.14.32",
     "@typescript-eslint/eslint-plugin": "4.17.0",
     "@typescript-eslint/parser": "4.17.0",
+    "commitizen": "^4.2.3",
     "conventional-changelog-cli": "2.1.1",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "7.21.0",
