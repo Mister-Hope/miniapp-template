@@ -21,7 +21,7 @@
     "compileHotReLoad": true,
     "useMultiFrameRuntime": true,
     "useApiHook": true,
-    "useApiHostProcess": true,
+    "useApiHostProcess": false,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -39,7 +39,7 @@
   },
   "appid": "wx33acb831ee1831a5",
   "projectname": "miniapp-demo",
-  "libVersion": "2.15.0",
+  "libVersion": "2.16.0",
   "condition": {
     "search": {
       "list": []
