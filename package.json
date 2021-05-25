@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@mr-hope/gulp-sass": "2.0.0",
-    "@types/node": "15.0.1",
+    "@types/node": "15.6.1",
     "@typescript-eslint/eslint-plugin": "4.22.0",
     "@typescript-eslint/parser": "4.22.0",
     "commitizen": "^4.2.3",
