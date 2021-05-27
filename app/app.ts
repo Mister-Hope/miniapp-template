@@ -17,10 +17,10 @@ export interface AppOption {
 }
 
 App({
-  globalData: ({
+  globalData: {
     version,
     openid: "",
-  } as unknown) as GlobalData,
+  } as unknown as GlobalData,
 
   onLaunch() {
     startup(this.globalData);
