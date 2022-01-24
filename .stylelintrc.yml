@@ -1,10 +1,10 @@
 extends:
   - stylelint-config-standard
+  - stylelint-config-standard-scss
   - stylelint-config-prettier
 
 plugins:
   - stylelint-order
-  - stylelint-scss
 
 rules:
   at-rule-disallowed-list:
@@ -36,8 +36,6 @@ rules:
 
   declaration-block-single-line-max-declarations: 1
 
-  declaration-block-trailing-semicolon: always
-
   declaration-colon-space-after: "always-single-line"
 
   declaration-colon-space-before: never
@@ -64,6 +62,8 @@ rules:
   media-feature-parentheses-space-inside: never
 
   no-descending-specificity: null
+
+  no-invalid-position-at-import-rule: null
 
   no-missing-end-of-source-newline: true
 
@@ -423,6 +423,13 @@ rules:
   scss/at-mixin-pattern: ^[a-z]+([a-z0-9-]+[a-z0-9]+)?$
 
   scss/at-rule-no-unknown: true
+
+  scss/dollar-variable-empty-line-before:
+    - always
+    - except:
+        - first-nested
+        - after-comment
+        - after-dollar-variable
 
   scss/dollar-variable-colon-space-after: always
 
