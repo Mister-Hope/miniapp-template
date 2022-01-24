@@ -39,7 +39,7 @@
     "gulp-typescript": "6.0.0-alpha.1",
     "husky": "7.0.2",
     "lint-staged": "11.2.3",
-    "miniprogram-api-typings": "3.4.3",
+    "miniprogram-api-typings": "3.4.5",
     "npm-check-updates": "11.8.5",
     "prettier": "2.4.1",
     "stylelint": "13.13.1",

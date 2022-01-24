@@ -4616,10 +4616,10 @@ minipass@^3.0.0, minipass@^3.1.0, minipass@^3.1.1, minipass@^3.1.3:
   dependencies:
     yallist "^4.0.0"
 
-miniprogram-api-typings@3.4.3:
-  version "3.4.3"
-  resolved "https://registry.yarnpkg.com/miniprogram-api-typings/-/miniprogram-api-typings-3.4.3.tgz#c88cc624973322d990353d94ae765db90938d132"
-  integrity sha512-wdBZG2IImFjkTFv66r225455J+//gn4c7Ja99aC3mVV0AqTRl45FwAFA7ur9KZd2j+ORGtyK1ldBT49rXpVE2w==
+miniprogram-api-typings@3.4.5:
+  version "3.4.5"
+  resolved "https://registry.yarnpkg.com/miniprogram-api-typings/-/miniprogram-api-typings-3.4.5.tgz#060e73b58ccc28db85ffb4ae60a838112866fb3e"
+  integrity sha512-GWvMdmPhJ40PLq4/sOh+n2xGRKf2R3kcuOaSe7IRTdT+Os8lfNrJYehYdgH7IoUWqaHqV8mFEWQj5oPIGhVv4Q==
 
 minizlib@^2.0.0, minizlib@^2.1.1:
   version "2.1.2"
