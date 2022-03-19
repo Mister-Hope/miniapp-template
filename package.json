@@ -42,7 +42,7 @@
     "lint-staged": "12.3.3",
     "miniprogram-api-typings": "3.4.5",
     "npm-check-updates": "12.3.0",
-    "prettier": "2.5.1",
+    "prettier": "2.6.0",
     "stylelint": "14.5.0",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-config-standard": "24.0.0",
