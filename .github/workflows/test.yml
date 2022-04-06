@@ -8,12 +8,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           persist-credentials: false
 
       - name: Restore node modules
-        uses: actions/cache@v2.1.5
+        uses: actions/cache@v3
         id: node-module-cache
         with:
           path: |
@@ -28,7 +28,7 @@ jobs:
 
       - name: yarn-cache
         if: steps.node-module-cache.outputs.cache-hit != 'true'
-        uses: actions/cache@v2.1.5
+        uses: actions/cache@v3
         id: yarn-cache
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
