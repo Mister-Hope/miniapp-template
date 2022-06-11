@@ -33,22 +33,22 @@
     lodash.set "4.3.2"
     lodash.unset "4.5.2"
 
-"@cloudbase/database@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@cloudbase/database/-/database-1.4.0.tgz#028d3899cc9b244f84fb69e7b35633b0449033ca"
-  integrity sha512-snKnn1cHKS5vGXV+xMIN2+8Dm6WJtcdLU79J9YVxVwETflZqIBoNDT8ADMZJbTfr/8jq0ymukyKv6ENyprURNQ==
+"@cloudbase/database@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@cloudbase/database/-/database-1.4.1.tgz#572533ff76a857ed4d05c2820867800fbbe2fd6f"
+  integrity sha512-BYLXHS6c+WhxAvvdak8Z3W+heScqBBPu/CQ76gC8v1Scuy5qf4qxuPWNzyoxde/eZsmc+BRRCFyIq4xUnIot8g==
   dependencies:
     bson "^4.0.3"
     lodash.clonedeep "4.5.0"
     lodash.set "4.3.2"
     lodash.unset "4.5.2"
 
-"@cloudbase/node-sdk@2.8.1":
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/@cloudbase/node-sdk/-/node-sdk-2.8.1.tgz#311c3e4592960b9f309ffdb7d38413e7146349bc"
-  integrity sha512-OIF2i9zthF46ZxaXMA845ylIjcSqEid3Wq7MGrQzRQbykRAl7tUoKs4pzucFfhhbvFXgKswUvzRx2S5Tm/xGJw==
+"@cloudbase/node-sdk@2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@cloudbase/node-sdk/-/node-sdk-2.9.1.tgz#0b67b98f264012f5576ae2123bc8019d388d1ca0"
+  integrity sha512-4JGLiy9/Ko7d1pnBgq5mtIUm5v9ig1tHqAeLrkMc8b4vVBRTnYlxJer3uKXq6+9fjLprxNyRSahEg4QR8/Gbkw==
   dependencies:
-    "@cloudbase/database" "1.4.0"
+    "@cloudbase/database" "1.4.1"
     "@cloudbase/signature-nodejs" "1.0.0-beta.0"
     "@types/retry" "^0.12.0"
     agentkeepalive "^4.1.3"
@@ -7054,11 +7054,11 @@ write-file-atomic@^4.0.1:
     signal-exit "^3.0.7"
 
 wx-server-sdk@latest:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/wx-server-sdk/-/wx-server-sdk-2.6.1.tgz#300ac4b93e1528907de31b0f7cdae3aa7d8043b9"
-  integrity sha512-Kok4DmmeNjPEXGGXGizCbMyUZ3UBLvTaREFF1JlCOlu29KcPG8CHtryAEgBarbCoVd2SX6ZBBY1m3uCdjN8zuw==
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/wx-server-sdk/-/wx-server-sdk-2.6.2.tgz#707564a0a0b49089c5af76d04a87031e3620ea4f"
+  integrity sha512-EIAIqn0e9qA0mmSsh+G6QOiHPQ7NSgFTXqf9FGT0JTZZAW/O4WkACJsorU7SDBrtYBZLzk9OOboXxHDvHjygTQ==
   dependencies:
-    "@cloudbase/node-sdk" "2.8.1"
+    "@cloudbase/node-sdk" "2.9.1"
     json-bigint "^1.0.0"
     protobufjs "6.8.8"
     tcb-admin-node latest
