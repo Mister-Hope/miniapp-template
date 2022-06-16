@@ -20,7 +20,7 @@ specifiers:
   miniprogram-api-typings: 3.4.6
   npm-check-updates: 13.1.5
   postcss: 8.4.14
-  prettier: 2.6.2
+  prettier: 2.7.1
   sort-package-json: 1.57.0
   stylelint: 14.9.1
   stylelint-config-prettier: 9.0.3
@@ -40,7 +40,7 @@ devDependencies:
   cz-conventional-changelog: 3.3.0
   eslint: 8.17.0
   eslint-config-prettier: 8.5.0_eslint@8.17.0
-  eslint-plugin-prettier: 4.0.0_ucegkljdju7q4zmvwxzqoprf3y
+  eslint-plugin-prettier: 4.0.0_hsbo72uvra2cjko46y2c4fgzzm
   gulp: 4.0.2
   gulp-rename: 2.0.0
   gulp-sourcemaps: 3.0.0
@@ -50,7 +50,7 @@ devDependencies:
   miniprogram-api-typings: 3.4.6
   npm-check-updates: 13.1.5
   postcss: 8.4.14
-  prettier: 2.6.2
+  prettier: 2.7.1
   sort-package-json: 1.57.0
   stylelint: 14.9.1
   stylelint-config-prettier: 9.0.3_stylelint@14.9.1
@@ -2076,7 +2076,7 @@ packages:
       eslint: 8.17.0
     dev: true
 
-  /eslint-plugin-prettier/4.0.0_ucegkljdju7q4zmvwxzqoprf3y:
+  /eslint-plugin-prettier/4.0.0_hsbo72uvra2cjko46y2c4fgzzm:
     resolution: {integrity: sha512-98MqmCJ7vJodoQK359bqQWaxOE0CS8paAz/GgjaZLyex4TTk3g9HugoO89EqWCrFiOqn9EVvcoo7gZzONCWVwQ==}
     engines: {node: '>=6.0.0'}
     peerDependencies:
@@ -2089,7 +2089,7 @@ packages:
     dependencies:
       eslint: 8.17.0
       eslint-config-prettier: 8.5.0_eslint@8.17.0
-      prettier: 2.6.2
+      prettier: 2.7.1
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -5025,8 +5025,8 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier/2.6.2:
-    resolution: {integrity: sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==}
+  /prettier/2.7.1:
+    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
