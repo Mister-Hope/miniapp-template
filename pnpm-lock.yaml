@@ -17,7 +17,7 @@ specifiers:
   gulp-typescript: 6.0.0-alpha.1
   husky: 8.0.1
   lint-staged: 13.0.1
-  miniprogram-api-typings: 3.4.6
+  miniprogram-api-typings: 3.5.0
   npm-check-updates: 13.1.5
   postcss: 8.4.14
   prettier: 2.6.2
@@ -47,7 +47,7 @@ devDependencies:
   gulp-typescript: 6.0.0-alpha.1_typescript@4.7.3
   husky: 8.0.1
   lint-staged: 13.0.1
-  miniprogram-api-typings: 3.4.6
+  miniprogram-api-typings: 3.5.0
   npm-check-updates: 13.1.5
   postcss: 8.4.14
   prettier: 2.6.2
@@ -4215,8 +4215,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /miniprogram-api-typings/3.4.6:
-    resolution: {integrity: sha512-1/aAma9wWzu9KS8m/h4j43UHoKS+XO61kaUDdftnlgwEyBndr0jrPJf/gUzdZQOST0pkLWmF0IMotz+j/Nh5SQ==}
+  /miniprogram-api-typings/3.5.0:
+    resolution: {integrity: sha512-cS/uXJTMGKujwoaeEFFFKqpCf7qp3R7iuQZWagZAwhKA3Z7U/xlhOcI3i1wqN+uo4YODg3AG1j2zCe1PDa9Wtg==}
     dev: true
 
   /minizlib/2.1.2:
