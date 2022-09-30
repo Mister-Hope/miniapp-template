@@ -18,7 +18,7 @@ specifiers:
   husky: 8.0.1
   lint-staged: 13.0.3
   miniprogram-api-typings: 3.5.0
-  npm-check-updates: 16.0.5
+  npm-check-updates: 16.3.4
   postcss: 8.4.14
   prettier: 2.7.1
   sort-package-json: 1.57.0
@@ -48,7 +48,7 @@ devDependencies:
   husky: 8.0.1
   lint-staged: 13.0.3
   miniprogram-api-typings: 3.5.0
-  npm-check-updates: 16.0.5
+  npm-check-updates: 16.3.4
   postcss: 8.4.14
   prettier: 2.7.1
   sort-package-json: 1.57.0
@@ -1404,7 +1404,7 @@ packages:
     dev: true
 
   /colors/1.0.3:
-    resolution: {integrity: sha1-BDP0TYCWgP3rYO0mDxsMJi6CpAs=}
+    resolution: {integrity: sha512-pFGrxThWcWQ2MsAz6RtgeWe4NK2kUE1WfsrvvlctdII745EW9I0yflqhe7++M5LEc7bV2c/9/5zc8sFcpL0Drw==}
     engines: {node: '>=0.1.90'}
     dev: true
 
@@ -3114,9 +3114,9 @@ packages:
       lru-cache: 6.0.0
     dev: true
 
-  /hosted-git-info/5.0.0:
-    resolution: {integrity: sha512-rRnjWu0Bxj+nIfUOkz0695C0H6tRrN5iYIzYejb0tDEefe2AekHu/U5Kn9pEie5vsJqpNQU02az7TGSH3qpz4Q==}
-    engines: {node: ^12.13.0 || ^14.15.0 || >=16}
+  /hosted-git-info/5.1.0:
+    resolution: {integrity: sha512-Ek+QmMEqZF8XrbFdwoDjSbm7rT23pCgEMOJmz6GPk/s4yH//RQfNPArhIxbguNxROq/+5lNBwCDHMhA903Kx1Q==}
+    engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
     dependencies:
       lru-cache: 7.13.2
     dev: true
@@ -4350,7 +4350,7 @@ packages:
     resolution: {integrity: sha512-m+GL22VXJKkKbw62ZaBBjv8u6IE3UI4Mh5QakIqs3fWiKe0Xyi6L97hakwZK41/LD4R/2ly71Bayx0NLMwLA/g==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16}
     dependencies:
-      hosted-git-info: 5.0.0
+      hosted-git-info: 5.1.0
       is-core-module: 2.10.0
       semver: 7.3.7
       validate-npm-package-license: 3.0.4
@@ -4386,8 +4386,8 @@ packages:
       npm-normalize-package-bin: 1.0.1
     dev: true
 
-  /npm-check-updates/16.0.5:
-    resolution: {integrity: sha512-0qK6NTmgbq8y39xm4y1tKW5ghEGtWWyiUzSPSQEaqb9elqOfZogV4GQVvBYw3xJlt6igJVXgBUyjNqtPv/j7Yw==}
+  /npm-check-updates/16.3.4:
+    resolution: {integrity: sha512-PDkd+KRhgzsB01c9dCo8O/Aad98ODb7aRxPamg+QOUXEdi/CcbItynxdCvHx9r1AXoMm0w1zixHeUZf8ktBwqQ==}
     engines: {node: '>=14.14'}
     hasBin: true
     dependencies:
@@ -4399,13 +4399,13 @@ packages:
       fp-and-or: 0.1.3
       get-stdin: 8.0.0
       globby: 11.1.0
-      hosted-git-info: 5.0.0
+      hosted-git-info: 5.1.0
       json-parse-helpfulerror: 1.0.3
       jsonlines: 0.1.1
       lodash: 4.17.21
       minimatch: 5.1.0
       p-map: 4.0.0
-      pacote: 13.6.1
+      pacote: 13.6.2
       parse-github-url: 1.0.2
       progress: 2.0.3
       prompts-ncu: 2.5.1
@@ -4416,6 +4416,7 @@ packages:
       semver-utils: 1.1.4
       source-map-support: 0.5.21
       spawn-please: 1.0.0
+      untildify: 4.0.0
       update-notifier: 6.0.2
       yaml: 2.1.1
     transitivePeerDependencies:
@@ -4438,7 +4439,7 @@ packages:
     resolution: {integrity: sha512-4J0GL+u2Nh6OnhvUKXRr2ZMG4lR8qtLp+kv7UiV00Y+nGiSxtttCyIRHCt5L5BNkXQld/RceYItau3MDOoGiBw==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
     dependencies:
-      hosted-git-info: 5.0.0
+      hosted-git-info: 5.1.0
       proc-log: 2.0.1
       semver: 7.3.7
       validate-npm-package-name: 4.0.0
@@ -4715,8 +4716,8 @@ packages:
       semver: 7.3.7
     dev: true
 
-  /pacote/13.6.1:
-    resolution: {integrity: sha512-L+2BI1ougAPsFjXRyBhcKmfT016NscRFLv6Pz5EiNf1CCFJFU0pSKKQwsZTyAQB+sTuUL4TyFyp6J1Ork3dOqw==}
+  /pacote/13.6.2:
+    resolution: {integrity: sha512-Gu8fU3GsvOPkak2CkbojR7vjs3k3P9cA6uazKTHdsdV0gpCEQq2opelnEv30KRQWgVzP5Vd/5umjcedma3MKtg==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -6418,6 +6419,11 @@ packages:
     dependencies:
       has-value: 0.3.1
       isobject: 3.0.1
+    dev: true
+
+  /untildify/4.0.0:
+    resolution: {integrity: sha512-KK8xQ1mkzZeg9inewmFVDNkg3l5LUhoq9kN6iWYB/CC9YMG8HA+c1Q8HwDe6dEX7kErrEVNVBO3fWsVq5iDgtw==}
+    engines: {node: '>=8'}
     dev: true
 
   /upath/1.2.0:
