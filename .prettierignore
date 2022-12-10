@@ -3,3 +3,4 @@ dist/
 app/pages/detail/music.wxs
 
 pnpm-lock.yaml
+pnpm-workspace.yaml

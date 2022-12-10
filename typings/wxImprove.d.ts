@@ -34,7 +34,8 @@ declare namespace WechatMiniprogram {
     enableTraffic?: boolean;
   }
 
-  interface RequestResult<T> extends RequestSuccessCallbackResult {
+  interface RequestResult<T extends string | IAnyObject | ArrayBuffer>
+    extends RequestSuccessCallbackResult {
     data: T;
   }
 
