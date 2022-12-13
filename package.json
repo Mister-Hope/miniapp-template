@@ -47,7 +47,7 @@
     "gulp-typescript": "6.0.0-alpha.1",
     "husky": "8.0.2",
     "lint-staged": "13.1.0",
-    "miniprogram-api-typings": "3.6.0",
+    "miniprogram-api-typings": "3.8.1",
     "npm-check-updates": "16.5.6",
     "postcss": "8.4.19",
     "prettier": "2.8.1",
