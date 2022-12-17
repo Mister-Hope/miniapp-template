@@ -5,7 +5,7 @@ importers:
   .:
     specifiers:
       '@mr-hope/gulp-sass': 3.1.1
-      '@types/node': 18.11.12
+      '@types/node': 18.11.17
       '@typescript-eslint/eslint-plugin': 5.46.0
       '@typescript-eslint/parser': 5.46.0
       commitizen: 4.2.6
@@ -34,7 +34,7 @@ importers:
       typescript: 4.9.4
     devDependencies:
       '@mr-hope/gulp-sass': 3.1.1
-      '@types/node': 18.11.12
+      '@types/node': 18.11.17
       '@typescript-eslint/eslint-plugin': 5.46.0_5mle7isnkfgjmrghnnczirv6iy
       '@typescript-eslint/parser': 5.46.0_ha6vam6werchizxrnqvarmz2zu
       commitizen: 4.2.6
@@ -317,7 +317,7 @@ packages:
   /@mr-hope/gulp-sass/3.1.1:
     resolution: {integrity: sha512-QfEMLR3C6etfTydy/arqb/1dJrjhuS2fWOsdYaxVWImjdhzQ7j6ej2u80DODbog7IMhlm85HN28ndBOSDqiDUQ==}
     dependencies:
-      '@types/node': 18.11.12
+      '@types/node': 18.11.17
       chalk: 4.1.2
       plugin-error: 1.0.1
       replace-ext: 2.0.0
@@ -545,8 +545,8 @@ packages:
     dev: true
     optional: true
 
-  /@types/node/18.11.12:
-    resolution: {integrity: sha512-FgD3NtTAKvyMmD44T07zz2fEf+OKwutgBCEVM8GcvMGVGaDktiLNTDvPwC/LUe3PinMW+X6CuLOF2Ui1mAlSXg==}
+  /@types/node/18.11.17:
+    resolution: {integrity: sha512-HJSUJmni4BeDHhfzn6nF0sVmd1SMezP7/4F0Lq+aXzmp2xm9O7WXrUtHW/CHlYVtZUbByEvWidHqRtcJXGF2Ng==}
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -5504,7 +5504,7 @@ packages:
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
       '@types/long': 4.0.2
-      '@types/node': 18.11.12
+      '@types/node': 18.11.17
       long: 4.0.0
     dev: false
 
