@@ -8,13 +8,13 @@
 
 - 使用 `pnpm build` 编译小程序输出
 
-- 使用 `pnpm watch` 在开发过程中监听小程序更改
+- 使用 `pnpm dev` 在开发过程中监听小程序更改
 
 - 使用 `pnpm lint` 格式化小程序代码
 
 ## 提交
 
-模板使用 husky 配合 lint-stage 保证代码在提交时通过校验。你需要使用 `pnpm cz` 或 `pnpm commit` 命令进行提交。
+模板使用 husky 配合 lint-stage 保证代码在提交时通过校验。你需要使用 `pnpm commit` 命令进行提交。
 
 ## 配置
 

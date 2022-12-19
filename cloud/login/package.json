@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "wx-server-sdk": "latest"
+    "wx-server-sdk": "2.6.3"
   },
   "pnpm": {
     "peerDependencyRules": {

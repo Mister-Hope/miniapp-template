@@ -135,19 +135,16 @@ overrides:
       "@typescript-eslint/no-unsafe-member-access":
         - warn
 
+      "@typescript-eslint/no-non-null-assertion":
+        - off
+
       "@typescript-eslint/unbound-method":
         - off
 
   - files:
-      - "**/test/**/*.spec.js"
-      - "**/test/**/*.spec.ts"
-
-    env:
-      jest: true
-      node: true
-
-  - files:
-      - "gulpfile.js"
+      - scripts/**/*.js
+      - .commitlintrc.cjs
+      - gulpfile.cjs
 
     env:
       node: true
