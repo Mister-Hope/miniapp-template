@@ -30,6 +30,7 @@
     "lint:stylelint": "stylelint **/*.scss",
     "lint:wxml": "prettier --check --parser html **/*.wxml",
     "lint:wxs": "prettier --check --parser babel-flow **/*.wxs",
+    "package:check-update": "pnpm dlx npm-check-updates -u --deep",
     "prepare": "husky install"
   },
   "lint-staged": {
