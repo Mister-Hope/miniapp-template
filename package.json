@@ -62,7 +62,7 @@
     "gulp-rename": "2.0.0",
     "gulp-sourcemaps": "3.0.0",
     "gulp-typescript": "6.0.0-alpha.1",
-    "husky": "8.0.2",
+    "husky": "8.0.3",
     "lint-staged": "13.1.0",
     "miniprogram-api-typings": "3.8.1",
     "npm-check-updates": "16.6.0",
