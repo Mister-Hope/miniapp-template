@@ -9,15 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-          submodules: true
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 7
-          run_install: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v3

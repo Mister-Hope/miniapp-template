@@ -31,7 +31,6 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "lib": ["ESNext"],
-    "locale": "zh-CN",
     "module": "CommonJS"
   }
 }
