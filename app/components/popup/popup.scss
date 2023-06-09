@@ -1,6 +1,32 @@
 @import "../../style/icon";
 @import "../../style/common";
 
+.popup {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5000;
+
+  overflow: hidden;
+
+  min-height: 25%;
+  padding: 0 24px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  background-color: #fff;
+
+  line-height: 1.4;
+
+  transition: all 0.3s;
+  transform: translateY(100%);
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #1c1c1e;
+  }
+}
+
 .popup-wrapper {
   position: absolute;
   opacity: 0;
@@ -13,32 +39,6 @@
 
     .popup {
       transform: translateY(0);
-    }
-  }
-
-  .popup {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 5000;
-
-    overflow: hidden;
-
-    min-height: 25%;
-    padding: 0 24px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-
-    background-color: #fff;
-
-    line-height: 1.4;
-
-    transition: all 0.3s;
-    transform: translateY(100%);
-
-    @media (prefers-color-scheme: dark) {
-      background-color: #1c1c1e;
     }
   }
 }
