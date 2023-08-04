@@ -75,8 +75,8 @@ importers:
         specifier: 13.2.2
         version: 13.2.2
       miniprogram-api-typings:
-        specifier: 3.9.1
-        version: 3.9.1
+        specifier: 3.11.0
+        version: 3.11.0
       npm-check-updates:
         specifier: 16.10.12
         version: 16.10.12
@@ -4973,8 +4973,8 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     dev: true
 
-  /miniprogram-api-typings@3.9.1:
-    resolution: {integrity: sha512-oyratzOWyuFhBzONp06l0FBPu03ltCd1sRWoy2v38SnAKxtpZ8ySLTSEw//hIsBdocMda7fFZEjOG57L57mcUw==}
+  /miniprogram-api-typings@3.11.0:
+    resolution: {integrity: sha512-jMYeqEOGZc1dq7MR8Zu1tj1zmzlvATlvsUb7eFaTYk8LoBVrbgdGUWwVjAmFFNjNdiUaokceGeJaByAa5QYpKw==}
     dev: true
 
   /minizlib@2.1.2:
