@@ -57,7 +57,7 @@
     "cz-git": "1.6.1",
     "del": "7.0.0",
     "eslint": "8.49.0",
-    "eslint-config-prettier": "8.8.0",
+    "eslint-config-prettier": "8.10.0",
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-prettier": "4.2.1",
     "gulp": "4.0.2",
