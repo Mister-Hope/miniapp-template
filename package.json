@@ -70,7 +70,7 @@
     "npm-check-updates": "16.13.3",
     "postcss": "8.4.29",
     "prettier": "2.8.8",
-    "sort-package-json": "2.4.1",
+    "sort-package-json": "2.6.0",
     "standard-version": "9.5.0",
     "stylelint": "15.10.3",
     "stylelint-config-hope": "3.0.0",
