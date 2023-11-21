@@ -68,7 +68,7 @@
     "lint-staged": "13.3.0",
     "miniprogram-api-typings": "3.11.0",
     "npm-check-updates": "16.13.3",
-    "postcss": "8.4.29",
+    "postcss": "8.4.31",
     "prettier": "2.8.8",
     "sort-package-json": "2.6.0",
     "standard-version": "9.5.0",
