@@ -9,7 +9,7 @@ import { message } from "./message";
  * @returns 夜间模式状态
  */
 export const getDarkmode = (
-  sysInfo: WechatMiniprogram.SystemInfo = wx.getSystemInfoSync()
+  sysInfo: WechatMiniprogram.SystemInfo = wx.getSystemInfoSync(),
 ): boolean => (sysInfo.AppPlatform ? false : sysInfo.theme === "dark");
 
 interface LoginCloudFunctionResult {
@@ -77,7 +77,7 @@ export const registAction = (): void => {
   if (wx.getStorageSync("capture-screen") !== "never")
     wx.onUserCaptureScreen(() => {
       const status = wx.getStorageSync<"never" | "noticed" | undefined>(
-        "capture-screen"
+        "capture-screen",
       );
 
       if (status !== "never")

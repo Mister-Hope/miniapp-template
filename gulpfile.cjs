@@ -21,13 +21,13 @@ const buildWXSS = () =>
                 : null,
             load: (canonicalUrl) => ({
               contents: `@import "${canonicalUrl.searchParams.get(
-                "path"
+                "path",
               )}.wxss"`,
               syntax: "css",
             }),
           },
         ],
-      }).on("error", sass.logError)
+      }).on("error", sass.logError),
     )
     .pipe(rename({ extname: ".wxss" }))
     .pipe(dest("dist"));
@@ -66,13 +66,13 @@ const watchAppFiles = () =>
   watch(
     "app/**/*.{wxml,wxs,json,svg,png,webp}",
     { ignoreInitial: false },
-    moveAppFiles
+    moveAppFiles,
   );
 const watchCloudFiles = () =>
   watch(
     "cloud/**/*.{wxml,wxs,json,svg,png}",
     { ignoreInitial: false },
-    moveCloudFiles
+    moveCloudFiles,
   );
 
 const watchApp = parallel(watchWXSS, watchAppTypescript, watchAppFiles);
@@ -84,7 +84,7 @@ const watchCommand = parallel(
   watchAppTypescript,
   watchCloudTypescript,
   watchAppFiles,
-  watchCloudFiles
+  watchCloudFiles,
 );
 
 const buildApp = parallel(buildWXSS, buildAppTypescript, moveAppFiles);
@@ -92,7 +92,7 @@ const buildApp = parallel(buildWXSS, buildAppTypescript, moveAppFiles);
 const buildCloud = parallel(
   buildCloudTypescript,
 
-  moveCloudFiles
+  moveCloudFiles,
 );
 
 const build = parallel(
@@ -100,7 +100,7 @@ const build = parallel(
   buildAppTypescript,
   buildCloudTypescript,
   moveAppFiles,
-  moveCloudFiles
+  moveCloudFiles,
 );
 
 exports.watchApp = watchApp;
