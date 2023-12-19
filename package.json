@@ -67,7 +67,7 @@
     "husky": "8.0.3",
     "lint-staged": "15.1.0",
     "miniprogram-api-typings": "3.12.2",
-    "npm-check-updates": "16.14.11",
+    "npm-check-updates": "16.14.12",
     "postcss": "8.4.32",
     "prettier": "3.1.1",
     "sort-package-json": "2.6.0",

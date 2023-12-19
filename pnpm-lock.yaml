@@ -78,8 +78,8 @@ importers:
         specifier: 3.12.2
         version: 3.12.2
       npm-check-updates:
-        specifier: 16.14.11
-        version: 16.14.11
+        specifier: 16.14.12
+        version: 16.14.12
       postcss:
         specifier: 8.4.32
         version: 8.4.32
@@ -5251,8 +5251,8 @@ packages:
       npm-normalize-package-bin: 3.0.1
     dev: true
 
-  /npm-check-updates@16.14.11:
-    resolution: {integrity: sha512-0MMWGbGci22Pu77bR9jRsy5qgxdQSJVqNtSyyFeubDPtbcU36z4gjEDITu26PMabFWPNkAoVfKF31M3uKUvzFg==}
+  /npm-check-updates@16.14.12:
+    resolution: {integrity: sha512-5FvqaDX8AqWWTDQFbBllgLwoRXTvzlqVIRSKl9Kg8bYZTfNwMnrp1Zlmb5e/ocf11UjPTc+ShBFjYQ7kg6FL0w==}
     engines: {node: '>=14.14'}
     hasBin: true
     dependencies:
