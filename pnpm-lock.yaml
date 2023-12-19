@@ -27,8 +27,8 @@ importers:
         specifier: 3.1.1
         version: 3.1.1
       '@types/node':
-        specifier: 20.10.0
-        version: 20.10.0
+        specifier: 20.10.5
+        version: 20.10.5
       '@typescript-eslint/eslint-plugin':
         specifier: 6.15.0
         version: 6.15.0(@typescript-eslint/parser@6.15.0)(eslint@8.54.0)(typescript@5.3.2)
@@ -500,7 +500,7 @@ packages:
   /@mr-hope/gulp-sass@3.1.1:
     resolution: {integrity: sha512-QfEMLR3C6etfTydy/arqb/1dJrjhuS2fWOsdYaxVWImjdhzQ7j6ej2u80DODbog7IMhlm85HN28ndBOSDqiDUQ==}
     dependencies:
-      '@types/node': 20.10.0
+      '@types/node': 20.10.5
       chalk: 4.1.2
       plugin-error: 1.0.1
       replace-ext: 2.0.0
@@ -765,8 +765,8 @@ packages:
       undici-types: 5.26.5
     dev: true
 
-  /@types/node@20.10.0:
-    resolution: {integrity: sha512-D0WfRmU9TQ8I9PFx9Yc+EBHw+vSpIub4IDvQivcp26PtPrdMGAq5SDcpXEo/epqa/DXotVpekHiLNTg3iaKXBQ==}
+  /@types/node@20.10.5:
+    resolution: {integrity: sha512-nNPsNE65wjMxEKI93yOP+NPGGBJz/PoN3kZsVLee0XMiJolxSekEVD8wRwBUBqkwc7UWop0edW50yrCQW4CyRw==}
     dependencies:
       undici-types: 5.26.5
 
@@ -5988,7 +5988,7 @@ packages:
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
       '@types/long': 4.0.2
-      '@types/node': 20.10.0
+      '@types/node': 20.10.5
       long: 4.0.0
     dev: false
 
