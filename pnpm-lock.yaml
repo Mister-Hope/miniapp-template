@@ -39,8 +39,8 @@ importers:
         specifier: 4.3.0
         version: 4.3.0(typescript@5.3.2)
       cz-git:
-        specifier: 1.7.1
-        version: 1.7.1
+        specifier: 1.8.0
+        version: 1.8.0
       del:
         specifier: 7.1.0
         version: 7.1.0
@@ -187,7 +187,7 @@ packages:
       '@types/clone': 0.1.30
       clone: 2.1.2
       is-stream: 2.0.1
-      url: 0.11.2
+      url: 0.11.3
     dev: false
 
   /@cloudbase/signature-nodejs@1.1.0:
@@ -2160,8 +2160,8 @@ packages:
       - typescript
     dev: true
 
-  /cz-git@1.7.1:
-    resolution: {integrity: sha512-NMe4REukCS7op1YA1jixRXOgII8Um2/Ii8TeyFEOISgp2ZzeobzkMOP8dXSrTQ3bvmm7YpPOdr2301yJkOJcbA==}
+  /cz-git@1.8.0:
+    resolution: {integrity: sha512-XL5nXiqbW10YswQqWODrbwyWhydw3mLhP8OBrXyl8u4sIjTf/6mhGsizd6FA2VgPc4tZaNGguFoUyDj7vIBouw==}
     engines: {node: '>=v12.20.0'}
     dev: true
 
@@ -7602,13 +7602,6 @@ packages:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
       punycode: 2.3.1
-
-  /url@0.11.2:
-    resolution: {integrity: sha512-7yIgNnrST44S7PJ5+jXbdIupfU1nWUdQJBFBeJRclPXiWgCvrSq5Frw8lr/i//n5sqDfzoKmBymMS81l4U/7cg==}
-    dependencies:
-      punycode: 1.4.1
-      qs: 6.11.2
-    dev: false
 
   /url@0.11.3:
     resolution: {integrity: sha512-6hxOLGfZASQK/cijlZnZJTq8OXAkt/3YGfQX45vvMYXpZoo8NdWZcY73K108Jf759lS1Bv/8wXnHDTSz17dSRw==}
