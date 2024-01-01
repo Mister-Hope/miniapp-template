@@ -1,7 +1,7 @@
-import { error, info, warn } from "./log";
-import { tip } from "./wx";
-import { GlobalData } from "../app";
-import { message } from "./message";
+import { error, info, warn } from "./log.js";
+import { message } from "./message.js";
+import { tip } from "./wx.js";
+import { GlobalData } from "../app.js";
 
 /**
  * 根据用户设置，判断当前小程序是否应启用夜间模式

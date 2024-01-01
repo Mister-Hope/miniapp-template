@@ -1,4 +1,4 @@
-import { error, info, warn } from "./log";
+import { error, info, warn } from "./log.js";
 
 /**
  * 显示提示文字

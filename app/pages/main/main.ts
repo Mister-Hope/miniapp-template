@@ -1,7 +1,6 @@
-import { appName } from "../../config";
-import { message } from "../../utils/message";
-
-import type { AppOption } from "../../app";
+import type { AppOption } from "../../app.js";
+import { appName } from "../../config.js";
+import { message } from "../../utils/message.js";
 
 const { globalData } = getApp<AppOption>();
 

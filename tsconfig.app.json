@@ -1,6 +1,8 @@
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node10",
     "target": "es6",
     "types": ["miniprogram-api-typings"]
   },

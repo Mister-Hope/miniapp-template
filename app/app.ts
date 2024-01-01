@@ -1,5 +1,5 @@
-import { startup } from "./utils/app";
 import { version } from "./config";
+import { startup } from "./utils/app";
 
 export interface GlobalData {
   /** 版本号 */

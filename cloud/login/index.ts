@@ -1,4 +1,4 @@
-import { DYNAMIC_CURRENT_ENV, init, getWXContext } from "wx-server-sdk";
+import { DYNAMIC_CURRENT_ENV, getWXContext, init } from "wx-server-sdk";
 
 // 初始化 cloud
 init({

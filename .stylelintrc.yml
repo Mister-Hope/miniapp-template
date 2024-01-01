@@ -1,7 +1,17 @@
 extends:
   - stylelint-config-hope
 rules:
+  declaration-block-no-redundant-longhand-properties:
+    - true
+    - ignoreShorthands:
+        - inset
+  media-feature-range-notation:
+    - prefix
+  no-descending-specificity: null
   selector-type-no-unknown:
     - true
     - ignoreTypes:
+        - icon
         - page
+        - picker
+  shorthand-property-no-redundant-values: null
