@@ -101,14 +101,14 @@ importers:
   cloud/hello:
     dependencies:
       wx-server-sdk:
-        specifier: 2.7.2
-        version: 2.7.2
+        specifier: 3.0.1
+        version: 3.0.1
 
   cloud/login:
     dependencies:
       wx-server-sdk:
-        specifier: 2.7.2
-        version: 2.7.2
+        specifier: 3.0.1
+        version: 3.0.1
 
 packages:
 
@@ -578,10 +578,6 @@ packages:
   /@types/json5@0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
-
-  /@types/long@4.0.2:
-    resolution: {integrity: sha512-MqTGEo5bj5t157U6fA/BiDynNkn0YknVdh48CMPkTSpFTVmvao5UQmm7uEF6xBEo7qIMAlY/JSleYaE6VOdpaA==}
-    dev: false
 
   /@types/minimist@1.2.5:
     resolution: {integrity: sha512-hov8bUuiLiyFPGyFPE1lwWhmzYbirOXQNNo40+y3zow8aFVTeyn3VWL0VFFfdNddA8S4Vf0Tc062rzyNr7Paag==}
@@ -3953,8 +3949,8 @@ packages:
       is-unicode-supported: 0.1.0
     dev: true
 
-  /long@4.0.0:
-    resolution: {integrity: sha512-XsP+KhQif4bjX1kbuSiySJFNAehNxgLb6hPRGJ9QsUr8ajHkuXGdrHmFUTUUXhDwVX2R5bY4JNZEwbUiMhV+MA==}
+  /long@5.2.3:
+    resolution: {integrity: sha512-lcHwpNoggQTObv5apGNCTdJrO69eHOZMi4BNC+rTLER8iHAqGrUVeLh/irVIM7zTw2bOXA8T6uNPeujwOLg/2Q==}
     dev: false
 
   /longest@2.0.1:
@@ -4748,9 +4744,9 @@ packages:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
     dev: true
 
-  /protobufjs@6.11.4:
-    resolution: {integrity: sha512-5kQWPaJHi1WoCpjTGszzQ32PG2F4+wRY6BmAT4Vfw56Q2FZ4YZzK20xUYQH4YkfehY1e6QSICrJquM6xXZNcrw==}
-    hasBin: true
+  /protobufjs@7.2.6:
+    resolution: {integrity: sha512-dgJaEDDL6x8ASUZ1YqWciTRrdOuYNzoOf27oHNfdyvKqHr5i0FV7FSLU+aIeFjyFgVxrpTOtQUi0BLLBymZaBw==}
+    engines: {node: '>=12.0.0'}
     requiresBuild: true
     dependencies:
       '@protobufjs/aspromise': 1.1.2
@@ -4763,9 +4759,8 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/long': 4.0.2
       '@types/node': 20.11.30
-      long: 4.0.0
+      long: 5.2.3
     dev: false
 
   /psl@1.9.0:
@@ -6187,12 +6182,12 @@ packages:
       signal-exit: 4.1.0
     dev: true
 
-  /wx-server-sdk@2.7.2:
-    resolution: {integrity: sha512-NiGK0xdeCKF9YF6Me+6tnsngpV8rqqyPMDUjVwhCtdku+q8pMhLssoql+QHLZlvyIVN95PqbaFBq/GCTfPpHJQ==}
+  /wx-server-sdk@3.0.1:
+    resolution: {integrity: sha512-b53tbqTV9knXJIfcmWTmksQvk+BC54vTU6WZNwEvAJ3iOxrRhPitcygyiwFfMBWpFm9YvkwITEhU821XoG8llQ==}
     dependencies:
       '@cloudbase/node-sdk': 2.10.0
       json-bigint: 1.0.0
-      protobufjs: 6.11.4
+      protobufjs: 7.2.6
       tslib: 1.14.1
     transitivePeerDependencies:
       - debug
