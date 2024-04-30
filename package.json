@@ -74,7 +74,7 @@
     "stylelint-config-hope": "6.0.1",
     "typescript": "5.4.5"
   },
-  "packageManager": "pnpm@8.15.5",
+  "packageManager": "pnpm@8.15.8",
   "pnpm": {
     "overrides": {
       "chokidar": "^3.5.3",
