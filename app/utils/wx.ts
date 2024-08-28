@@ -120,7 +120,7 @@ export const uploadCloudFile = (
       },
       fail: ({ errMsg }) => {
         error(errMsg);
-        reject(errMsg);
+        reject(new Error(errMsg));
       },
     });
   });

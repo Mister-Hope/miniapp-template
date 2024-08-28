@@ -1,7 +1,7 @@
 import { error, info, warn } from "./log.js";
 import { message } from "./message.js";
 import { tip } from "./wx.js";
-import { GlobalData } from "../app.js";
+import type { GlobalData } from "../app.js";
 
 /**
  * 根据用户设置，判断当前小程序是否应启用夜间模式
@@ -10,7 +10,7 @@ import { GlobalData } from "../app.js";
  */
 export const getDarkmode = (
   sysInfo: WechatMiniprogram.SystemInfo = wx.getSystemInfoSync(),
-): boolean => (sysInfo.AppPlatform ? false : sysInfo.theme === "dark");
+): boolean => sysInfo.theme === "dark";
 
 interface LoginCloudFunctionResult {
   /** 用户的 openid */
@@ -57,7 +57,7 @@ export const registAction = (): void => {
     warn("onMemoryWarningReceive");
     wx.reportAnalytics("memory_warning", {
       // eslint-disable-next-line @typescript-eslint/naming-convention
-      memory_warning: res && res.level ? res.level : 0,
+      memory_warning: res?.level ?? 0,
     });
   });
 

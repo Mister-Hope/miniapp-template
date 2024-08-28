@@ -1,9 +1,9 @@
-const { sass } = require("@mr-hope/gulp-sass");
 const { dest, parallel, src, watch } = require("gulp");
 const rename = require("gulp-rename");
 const replace = require("gulp-replace");
 const sourcemaps = require("gulp-sourcemaps");
 const typescript = require("gulp-typescript");
+const { sass } = require("gulp5-sass-plugin");
 
 const appTSProject = typescript.createProject("tsconfig.app.json");
 const cloudTSProject = typescript.createProject("tsconfig.cloud.json");
