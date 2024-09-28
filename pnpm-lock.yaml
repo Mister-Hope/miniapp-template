@@ -51,8 +51,8 @@ importers:
         specifier: 6.0.0-alpha.1
         version: 6.0.0-alpha.1(typescript@5.6.2)
       gulp5-sass-plugin:
-        specifier: 2.0.2
-        version: 2.0.2(gulp@5.0.0)
+        specifier: 2.0.3
+        version: 2.0.3(gulp@5.0.0)
       husky:
         specifier: 9.1.6
         version: 9.1.6
@@ -1549,8 +1549,8 @@ packages:
     peerDependencies:
       typescript: '~2.7.1 || >=2.8.0-dev || >=2.9.0-dev || ~3.0.0 || >=3.0.0-dev || >=3.1.0-dev || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.7.0-dev '
 
-  gulp5-sass-plugin@2.0.2:
-    resolution: {integrity: sha512-O7zc6VBJJDW0uZbSrnT0z7wsb9bJNOFHno4EpiupkiYvkUFjVXl6ygA98kTk+jKkJwwWh/DxMg86uQhts+ZVcg==}
+  gulp5-sass-plugin@2.0.3:
+    resolution: {integrity: sha512-qmFWlrfZwmWksr1q4dPlDk5iM7QWWXqrkeGuLbo+e7sdVYK7O4A0c0eZUwRjBqXW9CjZ2nBcCb749ZTPxK29eg==}
     engines: {node: '>=14'}
     peerDependencies:
       gulp: ^5.0.0
@@ -4859,7 +4859,7 @@ snapshots:
       vinyl: 2.2.1
       vinyl-fs: 3.0.3
 
-  gulp5-sass-plugin@2.0.2(gulp@5.0.0):
+  gulp5-sass-plugin@2.0.3(gulp@5.0.0):
     dependencies:
       gulp: 5.0.0
       picocolors: 1.1.0
