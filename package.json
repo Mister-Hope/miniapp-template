@@ -58,7 +58,7 @@
     "gulp-replace": "1.1.4",
     "gulp-sourcemaps": "3.0.0",
     "gulp-typescript": "6.0.0-alpha.1",
-    "gulp5-sass-plugin": "2.0.2",
+    "gulp5-sass-plugin": "2.0.3",
     "husky": "9.1.6",
     "miniprogram-api-typings": "3.12.3",
     "nano-staged": "0.8.0",
