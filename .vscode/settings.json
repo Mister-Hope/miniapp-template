@@ -1,25 +1,20 @@
 {
   "cSpell.words": [
     "canonicalize",
-    "errcode",
-    "errmsg",
     "frameset",
+    "miniapp",
     "miniprogram",
-    "stylelint",
     "wechat",
     "weixin",
+    "errcode",
+    "errmsg",
+    "gulpfile",
+    "commitlint",
+    "stylelint",
     "werun",
     "weui",
     "wxss",
     "wxml"
   ],
-  "git.ignoreLimitWarning": true,
-  "typescript.tsdk": "node_modules\\typescript\\lib",
-  "yaml.schemas": {
-    "./server/.vscode/res.schema.json": [
-      "/server/res/guide/**/*.yml",
-      "/server/res/intro/**/*.yml",
-      "/server/res/other/**/*.yml"
-    ]
-  }
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }

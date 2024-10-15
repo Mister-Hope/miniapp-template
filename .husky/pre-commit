@@ -1,1 +1,1 @@
-pnpm nano-staged && pnpm run build
+pnpm nano-staged && pnpm build
