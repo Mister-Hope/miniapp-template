@@ -66,7 +66,7 @@
     "prettier": "3.3.3",
     "standard-version": "9.5.0",
     "stylelint": "16.10.0",
-    "stylelint-config-hope": "7.0.2",
+    "stylelint-config-hope": "7.0.4",
     "typescript": "5.6.3"
   },
   "packageManager": "pnpm@9.12.1",
