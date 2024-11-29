@@ -4,5 +4,6 @@
 # Output Files
 dist/**
 
+.npmrc
 project.config.json
 project.private.config.json
