@@ -16,7 +16,6 @@
     "compileHotReLoad": true,
     "preloadBackgroundData": false,
     "lazyloadPlaceholderEnable": false,
-
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -42,9 +41,23 @@
     "showES6CompileOption": false
   },
   "libVersion": "trial",
-  "appid": "wx33acb831ee1831a5",
+  "appid": "trail",
   "projectname": "miniapp-demo",
   "watchOptions": {
-    "ignore": ["app/**", "cloud/**", "node_modules/**"]
+    "ignore": [
+      "app/**",
+      "cloud/**",
+      "node_modules/**"
+    ]
+  },
+  "srcMiniprogramRoot": "dist/app/",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
   }
 }

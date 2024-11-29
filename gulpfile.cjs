@@ -12,6 +12,7 @@ const buildWXSS = () =>
   src("app/**/*.scss")
     .pipe(
       sass({
+        silenceDeprecations: ["import"],
         style: "compressed",
         importers: [
           // preserve `@import` rules
