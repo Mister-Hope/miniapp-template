@@ -1,20 +1,21 @@
 {
   "cSpell.words": [
     "canonicalize",
-    "frameset",
-    "miniapp",
-    "miniprogram",
-    "wechat",
-    "weixin",
+    "commitlint",
+    "darkmode",
     "errcode",
     "errmsg",
+    "frameset",
     "gulpfile",
-    "commitlint",
+    "miniapp",
+    "miniprogram",
     "stylelint",
+    "wechat",
+    "weixin",
     "werun",
     "weui",
-    "wxss",
-    "wxml"
+    "wxml",
+    "wxss"
   ],
   "typescript.tsdk": "node_modules\\typescript\\lib"
 }

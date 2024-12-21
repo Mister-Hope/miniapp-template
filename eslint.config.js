@@ -95,6 +95,8 @@ export default config(
       ],
 
       "@typescript-eslint/no-floating-promises": "off",
+      "@typescript-eslint/no-unnecessary-condition": "off",
+      "@typescript-eslint/no-unnecessary-type-parameters": "off",
       "@typescript-eslint/no-unsafe-member-access": "warn",
       "@typescript-eslint/prefer-nullish-coalescing": "off",
       "@typescript-eslint/unbound-method": "off",

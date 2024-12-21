@@ -9,7 +9,9 @@ import type { GlobalData } from "../app.js";
  * @returns 夜间模式状态
  */
 export const getDarkmode = (
-  sysInfo: WechatMiniprogram.SystemInfo = wx.getSystemInfoSync(),
+  sysInfo: WechatMiniprogram.AppBaseInfo = wx.getAppBaseInfo?.() ||
+    // eslint-disable-next-line @typescript-eslint/no-deprecated
+    wx.getSystemInfoSync(),
 ): boolean => sysInfo.theme === "dark";
 
 interface LoginCloudFunctionResult {
@@ -55,7 +57,7 @@ export const registAction = (): void => {
   wx.onMemoryWarning((res) => {
     tip("内存不足");
     warn("onMemoryWarningReceive");
-    wx.reportAnalytics("memory_warning", {
+    wx.reportEvent?.("memory_warning", {
       // eslint-disable-next-line @typescript-eslint/naming-convention
       memory_warning: res?.level ?? 0,
     });
@@ -107,8 +109,8 @@ export const registAction = (): void => {
  */
 export const startup = (globalData: GlobalData): void => {
   // 获取设备与运行环境信息
-  globalData.info = wx.getSystemInfoSync();
-  globalData.darkmode = getDarkmode(globalData.info);
+  globalData.info = wx.getDeviceInfo();
+  globalData.darkmode = getDarkmode();
 
   // listen theme change
   wx.onThemeChange(({ theme }) => {

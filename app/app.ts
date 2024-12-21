@@ -9,7 +9,7 @@ export interface GlobalData {
   /** 夜间模式开启状态 */
   darkmode: boolean;
   /** 设备信息 */
-  info: WechatMiniprogram.SystemInfo;
+  info: WechatMiniprogram.DeviceInfo;
 }
 
 export interface AppOption {
