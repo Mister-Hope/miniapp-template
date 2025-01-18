@@ -76,7 +76,7 @@
     },
     "overrides": {
       "css": "npm:@adobe/css-tools@^4.4.1",
-      "stylelint>ignore": "7.0.0"
+      "stylelint>ignore": "7.0.3"
     },
     "onlyBuiltDependencies": [
       "@parcel/watcher",
