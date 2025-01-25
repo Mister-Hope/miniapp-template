@@ -72,11 +72,11 @@ importers:
         specifier: 9.5.0
         version: 9.5.0
       stylelint:
-        specifier: 16.13.2
-        version: 16.13.2(typescript@5.7.3)
+        specifier: 16.14.0
+        version: 16.14.0(typescript@5.7.3)
       stylelint-config-hope:
         specifier: 8.0.0
-        version: 8.0.0(postcss@8.5.1)(stylelint@16.13.2(typescript@5.7.3))
+        version: 8.0.0(postcss@8.5.1)(stylelint@16.14.0(typescript@5.7.3))
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -333,42 +333,36 @@ packages:
     engines: {node: '>= 10.0.0'}
     cpu: [arm]
     os: [linux]
-    libc: [glibc]
 
   '@parcel/watcher-linux-arm-musl@2.5.0':
     resolution: {integrity: sha512-6uHywSIzz8+vi2lAzFeltnYbdHsDm3iIB57d4g5oaB9vKwjb6N6dRIgZMujw4nm5r6v9/BQH0noq6DzHrqr2pA==}
     engines: {node: '>= 10.0.0'}
     cpu: [arm]
     os: [linux]
-    libc: [musl]
 
   '@parcel/watcher-linux-arm64-glibc@2.5.0':
     resolution: {integrity: sha512-BfNjXwZKxBy4WibDb/LDCriWSKLz+jJRL3cM/DllnHH5QUyoiUNEp3GmL80ZqxeumoADfCCP19+qiYiC8gUBjA==}
     engines: {node: '>= 10.0.0'}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@parcel/watcher-linux-arm64-musl@2.5.0':
     resolution: {integrity: sha512-S1qARKOphxfiBEkwLUbHjCY9BWPdWnW9j7f7Hb2jPplu8UZ3nes7zpPOW9bkLbHRvWM0WDTsjdOTUgW0xLBN1Q==}
     engines: {node: '>= 10.0.0'}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@parcel/watcher-linux-x64-glibc@2.5.0':
     resolution: {integrity: sha512-d9AOkusyXARkFD66S6zlGXyzx5RvY+chTP9Jp0ypSTC9d4lzyRs9ovGf/80VCxjKddcUvnsGwCHWuF2EoPgWjw==}
     engines: {node: '>= 10.0.0'}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@parcel/watcher-linux-x64-musl@2.5.0':
     resolution: {integrity: sha512-iqOC+GoTDoFyk/VYSFHwjHhYrk8bljW6zOhPuhi5t9ulqiYq1togGJB5e3PwYVFFfeVgc6pbz3JdQyDoBszVaA==}
     engines: {node: '>= 10.0.0'}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@parcel/watcher-win32-arm64@2.5.0':
     resolution: {integrity: sha512-twtft1d+JRNkM5YbmexfcH/N4znDtjgysFaV9zvZmmJezQsKpkfLYJ+JFV3uygugK6AtIM2oADPkB2AdhBrNig==}
@@ -2897,8 +2891,8 @@ packages:
     peerDependencies:
       stylelint: ^16.0.2
 
-  stylelint@16.13.2:
-    resolution: {integrity: sha512-wDlgh0mRO9RtSa3TdidqHd0nOG8MmUyVKl+dxA6C1j8aZRzpNeEgdhFmU5y4sZx4Fc6r46p0fI7p1vR5O2DZqA==}
+  stylelint@16.14.0:
+    resolution: {integrity: sha512-orePw2dKxzXC0hd1VmxrDBqgf1KUV9DYsZY4guKLE9XcQD7m0BxVnWMaoQqMNsQIG14MyyTHf6zoajvOnDra8g==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -6162,47 +6156,47 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  stylelint-config-hope@8.0.0(postcss@8.5.1)(stylelint@16.13.2(typescript@5.7.3)):
+  stylelint-config-hope@8.0.0(postcss@8.5.1)(stylelint@16.14.0(typescript@5.7.3)):
     dependencies:
-      stylelint: 16.13.2(typescript@5.7.3)
-      stylelint-config-standard-scss: 14.0.0(postcss@8.5.1)(stylelint@16.13.2(typescript@5.7.3))
-      stylelint-order: 6.0.4(stylelint@16.13.2(typescript@5.7.3))
+      stylelint: 16.14.0(typescript@5.7.3)
+      stylelint-config-standard-scss: 14.0.0(postcss@8.5.1)(stylelint@16.14.0(typescript@5.7.3))
+      stylelint-order: 6.0.4(stylelint@16.14.0(typescript@5.7.3))
     transitivePeerDependencies:
       - postcss
 
-  stylelint-config-recommended-scss@14.1.0(postcss@8.5.1)(stylelint@16.13.2(typescript@5.7.3)):
+  stylelint-config-recommended-scss@14.1.0(postcss@8.5.1)(stylelint@16.14.0(typescript@5.7.3)):
     dependencies:
       postcss-scss: 4.0.9(postcss@8.5.1)
-      stylelint: 16.13.2(typescript@5.7.3)
-      stylelint-config-recommended: 14.0.1(stylelint@16.13.2(typescript@5.7.3))
-      stylelint-scss: 6.10.1(stylelint@16.13.2(typescript@5.7.3))
+      stylelint: 16.14.0(typescript@5.7.3)
+      stylelint-config-recommended: 14.0.1(stylelint@16.14.0(typescript@5.7.3))
+      stylelint-scss: 6.10.1(stylelint@16.14.0(typescript@5.7.3))
     optionalDependencies:
       postcss: 8.5.1
 
-  stylelint-config-recommended@14.0.1(stylelint@16.13.2(typescript@5.7.3)):
+  stylelint-config-recommended@14.0.1(stylelint@16.14.0(typescript@5.7.3)):
     dependencies:
-      stylelint: 16.13.2(typescript@5.7.3)
+      stylelint: 16.14.0(typescript@5.7.3)
 
-  stylelint-config-standard-scss@14.0.0(postcss@8.5.1)(stylelint@16.13.2(typescript@5.7.3)):
+  stylelint-config-standard-scss@14.0.0(postcss@8.5.1)(stylelint@16.14.0(typescript@5.7.3)):
     dependencies:
-      stylelint: 16.13.2(typescript@5.7.3)
-      stylelint-config-recommended-scss: 14.1.0(postcss@8.5.1)(stylelint@16.13.2(typescript@5.7.3))
-      stylelint-config-standard: 36.0.1(stylelint@16.13.2(typescript@5.7.3))
+      stylelint: 16.14.0(typescript@5.7.3)
+      stylelint-config-recommended-scss: 14.1.0(postcss@8.5.1)(stylelint@16.14.0(typescript@5.7.3))
+      stylelint-config-standard: 36.0.1(stylelint@16.14.0(typescript@5.7.3))
     optionalDependencies:
       postcss: 8.5.1
 
-  stylelint-config-standard@36.0.1(stylelint@16.13.2(typescript@5.7.3)):
+  stylelint-config-standard@36.0.1(stylelint@16.14.0(typescript@5.7.3)):
     dependencies:
-      stylelint: 16.13.2(typescript@5.7.3)
-      stylelint-config-recommended: 14.0.1(stylelint@16.13.2(typescript@5.7.3))
+      stylelint: 16.14.0(typescript@5.7.3)
+      stylelint-config-recommended: 14.0.1(stylelint@16.14.0(typescript@5.7.3))
 
-  stylelint-order@6.0.4(stylelint@16.13.2(typescript@5.7.3)):
+  stylelint-order@6.0.4(stylelint@16.14.0(typescript@5.7.3)):
     dependencies:
       postcss: 8.5.1
       postcss-sorting: 8.0.2(postcss@8.5.1)
-      stylelint: 16.13.2(typescript@5.7.3)
+      stylelint: 16.14.0(typescript@5.7.3)
 
-  stylelint-scss@6.10.1(stylelint@16.13.2(typescript@5.7.3)):
+  stylelint-scss@6.10.1(stylelint@16.14.0(typescript@5.7.3)):
     dependencies:
       css-tree: 3.1.0
       is-plain-object: 5.0.0
@@ -6212,9 +6206,9 @@ snapshots:
       postcss-resolve-nested-selector: 0.1.6
       postcss-selector-parser: 7.0.0
       postcss-value-parser: 4.2.0
-      stylelint: 16.13.2(typescript@5.7.3)
+      stylelint: 16.14.0(typescript@5.7.3)
 
-  stylelint@16.13.2(typescript@5.7.3):
+  stylelint@16.14.0(typescript@5.7.3):
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.4(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-tokenizer': 3.0.3
