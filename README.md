@@ -14,7 +14,7 @@
 
 ## 提交
 
-模板使用 husky 配合 lint-stage 保证代码在提交时通过校验。你需要使用 `pnpm commit` 命令进行提交。
+模板使用 `husky` 配合 `nano-staged` 保证代码在提交时通过校验。你需要使用 `pnpm commit` 命令进行提交。
 
 ## 配置
 
