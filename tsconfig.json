@@ -1,8 +1,24 @@
 {
   "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node10",
+    "noEmit": true,
+    "target": "ES2017"
+  },
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.cloud.json" }
   ],
-  "include": ["app/**/*.ts", "cloud/**/*.ts", "typings/**/*.ts"]
+  "include": [
+    "app/**/*.wxs",
+    "app/**/*.ts",
+    "cloud/**/*.ts",
+    "typings/**/*.ts",
+    "scripts/**/*.js",
+    "commitlint.config.ts",
+    "eslint.config.js",
+    "gulpfile.cjs"
+  ]
 }

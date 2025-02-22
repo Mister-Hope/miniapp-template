@@ -32,6 +32,7 @@ class Message {
    *
    * @returns 取消监听函数
    */
+  // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-parameters
   on<T extends any[]>(
     eventId: string,
     handler: (...args: T) => void,
@@ -54,6 +55,7 @@ class Message {
    * - 设置为`all`即取消所有
    * @param handler 需要取消的监听处理函数，不填则取消所有监听处理函数
    */
+  // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-parameters
   off<T extends any[]>(
     eventId: string | string[],
     handler: (...args: T) => void,
