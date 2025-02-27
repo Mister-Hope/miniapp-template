@@ -32,24 +32,22 @@
     "package:check-update": "pnpm dlx npm-check-updates -u --deep",
     "prepare": "husky"
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "nano-staged": {
     "**/*": "prettier --write --ignore-unknown",
     "*.{js,ts}": "eslint --fix",
-    "*.wxss": "stylelint --fix",
+    "*.scss": "stylelint --fix",
     "*.wxml": "prettier --parser html --write",
     "*.wxs": "prettier --parser babel-flow --write"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-git"
-    }
   },
   "devDependencies": {
     "@commitlint/cli": "19.7.1",
     "@commitlint/config-conventional": "19.7.1",
     "@types/node": "22.13.5",
-    "commitizen": "4.3.1",
-    "cz-git": "1.11.0",
     "del": "8.0.0",
     "eslint": "9.21.0",
     "eslint-config-mister-hope": "0.7.5",
