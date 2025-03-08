@@ -50,7 +50,7 @@
     "@types/node": "22.13.10",
     "del": "8.0.0",
     "eslint": "9.22.0",
-    "eslint-config-mister-hope": "0.7.5",
+    "eslint-config-mister-hope": "0.8.1",
     "gulp": "5.0.0",
     "gulp-rename": "2.0.0",
     "gulp-replace": "1.1.4",
