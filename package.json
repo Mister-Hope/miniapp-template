@@ -49,7 +49,7 @@
     "@commitlint/config-conventional": "19.8.0",
     "@types/node": "22.15.3",
     "del": "8.0.0",
-    "eslint": "9.25.1",
+    "eslint": "9.26.0",
     "eslint-config-mister-hope": "0.9.1",
     "gulp": "5.0.0",
     "gulp-rename": "2.0.0",
