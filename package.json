@@ -63,7 +63,7 @@
     "postcss": "8.5.4",
     "prettier": "3.5.3",
     "standard-version": "9.5.0",
-    "stylelint": "16.19.1",
+    "stylelint": "16.20.0",
     "stylelint-config-hope": "9.0.0",
     "typescript": "5.8.3"
   },
