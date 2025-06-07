@@ -67,7 +67,7 @@
     "stylelint-config-hope": "9.0.0",
     "typescript": "5.8.3"
   },
-  "packageManager": "pnpm@10.8.1",
+  "packageManager": "pnpm@10.11.1",
   "pnpm": {
     "onlyBuiltDependencies": [
       "@parcel/watcher",
