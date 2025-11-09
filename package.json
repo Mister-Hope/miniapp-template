@@ -79,7 +79,7 @@
     },
     "overrides": {
       "css": "npm:@adobe/css-tools@^4.4.2",
-      "esbuild": "^0.25.0"
+      "esbuild": "^0.26.0"
     }
   }
 }
