@@ -47,7 +47,7 @@
   "devDependencies": {
     "@commitlint/cli": "20.1.0",
     "@commitlint/config-conventional": "20.0.0",
-    "@types/node": "24.10.0",
+    "@types/node": "24.10.1",
     "del": "8.0.1",
     "eslint": "9.39.1",
     "eslint-config-mister-hope": "0.9.6",
