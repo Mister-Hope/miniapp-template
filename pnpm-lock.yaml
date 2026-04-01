@@ -79,14 +79,14 @@ importers:
   cloud/hello:
     dependencies:
       wx-server-sdk:
-        specifier: 3.0.1
-        version: 3.0.1
+        specifier: 3.0.4
+        version: 3.0.4
 
   cloud/login:
     dependencies:
       wx-server-sdk:
-        specifier: 3.0.1
-        version: 3.0.1
+        specifier: 3.0.4
+        version: 3.0.4
 
 packages:
 
@@ -3730,8 +3730,8 @@ packages:
     resolution: {integrity: sha512-OTIk8iR8/aCRWBqvxrzxR0hgxWpnYBblY1S5hDWBQfk/VFmJwzmJgQFN3WsoUKHISv2eAwe+PpbUzyL1CKTLXg==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  wx-server-sdk@3.0.1:
-    resolution: {integrity: sha512-b53tbqTV9knXJIfcmWTmksQvk+BC54vTU6WZNwEvAJ3iOxrRhPitcygyiwFfMBWpFm9YvkwITEhU821XoG8llQ==}
+  wx-server-sdk@3.0.4:
+    resolution: {integrity: sha512-kXKfWM+6FVVNiLfBVvZ07ddNVe2ez9q7WgatIHukzQhGjj4VaaBrnQfl7mXCa9n/XnPBNUG4K7zWP5o/Nx/s2A==}
 
   xml2js@0.5.0:
     resolution: {integrity: sha512-drPFnkQJik/O+uPKpqSgr22mpuFHqKdbS835iAQrUC73L2F5WkboIRd63ai/2Yg6I1jzifPFKH2NTK+cfglkIA==}
@@ -7557,7 +7557,7 @@ snapshots:
     dependencies:
       signal-exit: 4.1.0
 
-  wx-server-sdk@3.0.1:
+  wx-server-sdk@3.0.4:
     dependencies:
       '@cloudbase/node-sdk': 2.10.0
       json-bigint: 1.0.0
