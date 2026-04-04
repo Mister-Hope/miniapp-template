@@ -65,7 +65,7 @@
     "standard-version": "9.5.0",
     "stylelint": "17.6.0",
     "stylelint-config-hope": "11.0.0",
-    "typescript": "5.9.3"
+    "typescript": "6.0.2"
   },
   "packageManager": "pnpm@10.33.0",
   "pnpm": {
