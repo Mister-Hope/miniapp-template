@@ -6,51 +6,36 @@
   "bugs": {
     "url": "https://github.com/Mister-Hope/miniapp-template/issues"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Mister-Hope/miniapp-template.git"
-  },
   "license": "MIT",
   "author": {
     "name": "Mr.Hope",
     "email": "mister-hope@outlook.com",
     "url": "https://mister-hope.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inNENU/inNENU.git"
+  },
   "type": "module",
   "scripts": {
     "build": "gulp -f gulpfile.cjs build",
-    "changelog": "standard-version --skip.bump --skip.commit --skip.tag",
-    "clean": "node scripts/del.js",
-    "commit": "pnpm git-cz",
+    "clean": "unrun ./scripts/del.ts",
     "dev": "gulp -f gulpfile.cjs watch",
-    "lint": "pnpm lint:prettier --write && pnpm lint:wxs --write && pnpm lint:wxml --write && eslint . --fix && pnpm lint:stylelint --fix",
-    "lint:check": "pnpm lint:prettier && pnpm lint:wxs && pnpm lint:wxml && eslint . && pnpm lint:stylelint",
-    "lint:prettier": "prettier --check .",
+    "lint": "pnpm lint:oxlint --fix && oxfmt && pnpm lint:wxs --write && pnpm lint:wxml --write && pnpm lint:stylelint --fix",
+    "lint:oxlint": "oxlint --deny-warnings --report-unused-disable-directives",
     "lint:stylelint": "stylelint **/*.scss",
     "lint:wxml": "prettier --check --parser html **/*.wxml",
     "lint:wxs": "prettier --check --parser babel-flow **/*.wxs",
-    "package:check-update": "pnpm dlx npm-check-updates -u --deep",
     "prepare": "husky"
   },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "nano-staged": {
-    "**/*": "prettier --write --ignore-unknown",
-    "*.{js,ts}": "eslint --fix",
-    "*.scss": "stylelint --fix",
-    "*.wxml": "prettier --parser html --write",
-    "*.wxs": "prettier --parser babel-flow --write"
+  "dependencies": {
+    "@mptool/all": "0.13.0"
   },
   "devDependencies": {
     "@commitlint/cli": "20.5.0",
     "@commitlint/config-conventional": "20.5.0",
-    "@types/node": "24.12.2",
+    "@mr-hope/tsconfig": "0.0.3",
     "del": "8.0.1",
-    "eslint": "10.2.1",
-    "eslint-config-mister-hope": "0.11.1",
     "gulp": "5.0.1",
     "gulp-rename": "2.1.0",
     "gulp-replace": "1.1.4",
@@ -58,28 +43,48 @@
     "gulp-typescript": "6.0.0-alpha.1",
     "gulp5-sass-plugin": "2.1.0",
     "husky": "9.1.7",
+    "innenu-generator": "0.8.2",
     "miniprogram-api-typings": "5.1.2",
     "nano-staged": "1.0.2",
-    "postcss": "8.5.10",
+    "oxc-config-hope": "0.3.0",
+    "oxfmt": "0.46.0",
+    "oxlint": "1.61.0",
+    "oxlint-tsgolint": "0.21.1",
+    "postcss": "^8.5.10",
     "prettier": "3.8.3",
-    "standard-version": "9.5.0",
     "stylelint": "17.8.0",
     "stylelint-config-hope": "11.0.0",
-    "typescript": "5.9.3"
+    "tsdown": "0.21.9",
+    "typescript": "6.0.3",
+    "unrun": "0.2.36"
   },
-  "packageManager": "pnpm@10.33.0",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "es5-ext",
-      "protobufjs"
-    ],
-    "allowedDeprecatedVersions": {
-      "request": "2"
-    },
-    "overrides": {
-      "css": "npm:@adobe/css-tools@^4.4.2",
-      "esbuild": "^0.27.0"
-    }
-  }
+  "nano-staged": {
+    "**/*": "oxfmt --no-error-on-unmatched-pattern",
+    "*.{js,ts}": "oxlint --fix --deny-warnings --report-unused-disable-directives",
+    "*.scss": "stylelint --fix",
+    "*.wxml": "prettier --parser html --write",
+    "*.wxs": "prettier --parser babel-flow --write"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "prettier": {
+    "overrides": [
+      {
+        "files": "**/*.wxml",
+        "options": {
+          "parser": "html"
+        }
+      },
+      {
+        "files": "**/*.wxs",
+        "options": {
+          "parser": "babel-flow"
+        }
+      }
+    ]
+  },
+  "packageManager": "pnpm@10.33.0"
 }

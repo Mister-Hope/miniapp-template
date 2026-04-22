@@ -1,24 +1,10 @@
 {
-  "extends": "./tsconfig.base.json",
+  "extends": "@mr-hope/tsconfig/bundler.json",
   "compilerOptions": {
-    "allowJs": true,
-    "module": "CommonJS",
-    "moduleResolution": "Node10",
+    "lib": ["ESNext"],
+    "target": "ES2017",
     "noEmit": true,
-    "target": "ES2017"
+    "types": ["miniprogram-api-typings"]
   },
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.cloud.json" }
-  ],
-  "include": [
-    "app/**/*.wxs",
-    "app/**/*.ts",
-    "cloud/**/*.ts",
-    "typings/**/*.ts",
-    "scripts/**/*.js",
-    "commitlint.config.ts",
-    "eslint.config.js",
-    "gulpfile.cjs"
-  ]
+  "include": ["app/**/*.ts", "cloud/**/*.ts", "scripts/**/*.ts", "typings/**/*.ts", "*.config.ts"]
 }

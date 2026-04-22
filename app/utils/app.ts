@@ -1,11 +1,12 @@
+import type { GlobalData } from "../app.js";
 import { error, info, warn } from "./log.js";
 import { message } from "./message.js";
 import { tip } from "./wx.js";
-import type { GlobalData } from "../app.js";
 
 /**
  * 根据用户设置，判断当前小程序是否应启用夜间模式
  *
+ * @param sysInfo 设备与运行环境信息，默认为当前设备与运行环境信息
  * @returns 夜间模式状态
  */
 export const getDarkmode = (
@@ -32,7 +33,7 @@ export const login = (globalData: GlobalData): void => {
   if (openid) {
     info(`openid 为 ${openid}`);
     globalData.openid = openid;
-  } else
+  } else {
     wx.cloud
       .callFunction({
         name: "login",
@@ -49,6 +50,7 @@ export const login = (globalData: GlobalData): void => {
         message.emit("openid", openid);
       })
       .catch(error);
+  }
 };
 
 /** 注册全局监听 */
@@ -58,7 +60,6 @@ export const registAction = (): void => {
     tip("内存不足");
     warn("onMemoryWarningReceive");
     wx.reportEvent?.("memory_warning", {
-      // eslint-disable-next-line @typescript-eslint/naming-convention
       memory_warning: res?.level ?? 0,
     });
   });
@@ -76,13 +77,11 @@ export const registAction = (): void => {
   });
 
   // 监听用户截屏
-  if (wx.getStorageSync("capture-screen") !== "never")
+  if (wx.getStorageSync("capture-screen") !== "never") {
     wx.onUserCaptureScreen(() => {
-      const status = wx.getStorageSync<"never" | "noticed" | undefined>(
-        "capture-screen",
-      );
+      const status = wx.getStorageSync<"never" | "noticed" | undefined>("capture-screen");
 
-      if (status !== "never")
+      if (status !== "never") {
         wx.showModal({
           title: "善用小程序分享",
           content:
@@ -90,14 +89,17 @@ export const registAction = (): void => {
           showCancel: status === "noticed",
           cancelText: "不再提示",
           success: (res) => {
-            if (res.confirm) wx.setStorageSync("capture-screen", "noticed");
-            else if (res.cancel) {
+            if (res.confirm) {
+              wx.setStorageSync("capture-screen", "noticed");
+            } else if (res.cancel) {
               wx.setStorageSync("capture-screen", "never");
               if (wx.canIUse("offUserCaptureScreen")) wx.offUserCaptureScreen();
             }
           },
         });
+      }
     });
+  }
 };
 
 /**

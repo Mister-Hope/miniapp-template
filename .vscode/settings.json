@@ -1,21 +1,39 @@
 {
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "oxc.unusedDisableDirectives": "deny",
   "cSpell.words": [
     "canonicalize",
-    "commitlint",
+    "damnu",
+    "danmu",
     "darkmode",
+    "elif",
     "errcode",
     "errmsg",
-    "frameset",
     "gulpfile",
+    "inited",
+    "jfif",
     "miniapp",
     "miniprogram",
+    "qrcode",
     "stylelint",
+    "unrun",
     "wechat",
     "weixin",
     "werun",
     "weui",
+    "wxid",
     "wxml",
     "wxss"
   ],
-  "typescript.tsdk": "node_modules\\typescript\\lib"
+  "git.ignoreLimitWarning": true,
+  "minapp-vscode.cssExtname": "scss",
+  "minapp-vscode.jsExtname": "ts",
+  "minapp-vscode.wxmlFormatter": "prettier",
+  "search.exclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/.temp/**": true
+  },
+  "stylelint.snippet": ["css", "scss"],
+  "stylelint.validate": ["css", "scss"]
 }

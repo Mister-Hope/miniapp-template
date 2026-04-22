@@ -29,11 +29,10 @@ class Message {
    * @param eventId 订阅事件名称
    * @param handler 处理函数
    * @param once 是否只处理一次
-   *
    * @returns 取消监听函数
    */
   // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-parameters
-  on<T extends any[]>(
+  public on<T extends any[]>(
     eventId: string,
     handler: (...args: T) => void,
     once = false,
@@ -45,21 +44,21 @@ class Message {
     (this.eventObject as EventBus<T>)[eventId].push({ handler, once });
 
     // 返回取消监听函数，如果日后需要取消这个监听处理函数则需要调用这个函数。
-    return (): void => this.off(eventId, handler);
+    return (): void => {
+      this.off(eventId, handler);
+    };
   }
 
   /**
    * 取消订阅事件
    *
    * @param eventId 需要取消的订阅事件名称
-   * - 设置为`all`即取消所有
+   *
+   *   - 设置为`all`即取消所有
    * @param handler 需要取消的监听处理函数，不填则取消所有监听处理函数
    */
   // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-parameters
-  off<T extends any[]>(
-    eventId: string | string[],
-    handler: (...args: T) => void,
-  ): void {
+  public off<T extends any[]>(eventId: string | string[], handler: (...args: T) => void): void {
     /** 需要移除的监听id列表 */
     const idList = Array.isArray(eventId)
       ? eventId
@@ -68,13 +67,16 @@ class Message {
         : [eventId];
 
     idList.forEach((key) => {
-      if (handler)
-        // 移除特定监听
+      if (handler) // 移除特定监听
+      {
         this.eventObject[key] = (this.eventObject[key] || []).filter(
           (evtObj) => evtObj.handler !== handler,
         );
+      }
       // 移除所有监听
-      else this.eventObject[key] = [];
+      else {
+        this.eventObject[key] = [];
+      }
     });
   }
 
@@ -84,29 +86,27 @@ class Message {
    * @param eventId 订阅事件名称
    * @param args 参数
    */
-  emit(eventId: string, ...args: any[]): void {
+  public emit(eventId: string, ...args: any[]): void {
     /** 事件处理器 */
-    this.eventObject[eventId] = (this.eventObject[eventId] || []).filter(
-      (evtObj) => {
-        try {
-          // 尝试调用函数
-          if (evtObj.handler) evtObj.handler.apply(undefined, args);
-          // 写入调用状态
-          evtObj.called = true;
+    this.eventObject[eventId] = (this.eventObject[eventId] || []).filter((evtObj) => {
+      try {
+        // 尝试调用函数
+        if (evtObj.handler) evtObj.handler.apply(null, args);
+        // 写入调用状态
+        evtObj.called = true;
 
-          // 如果只能调用一次则移除
-          if (evtObj.once) return false;
-        } catch (err) {
-          // 给出错误信息
-          console.error(
-            `${eventId}事件监听触发失败：`,
-            (err as Error).stack || (err as Error).message || err,
-          );
-        }
+        // 如果只能调用一次则移除
+        if (evtObj.once) return false;
+      } catch (err) {
+        // 给出错误信息
+        console.error(
+          `${eventId}事件监听触发失败：`,
+          (err as Error).stack || (err as Error).message || err,
+        );
+      }
 
-        return true;
-      },
-    );
+      return true;
+    });
   }
 }
 

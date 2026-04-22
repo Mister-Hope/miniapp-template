@@ -1,10 +1,11 @@
 {
-  "extends": "./tsconfig.base.json",
+  "extends": "@mr-hope/tsconfig/bundler.json",
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "types": ["node"]
+    "rootDir": "./",
+    "lib": ["ESNext"],
+    "target": "ES2017",
+    "outDir": "./dist",
+    "types": ["miniprogram-api-typings"]
   },
-  "include": ["cloud/**/*.ts"]
+  "include": ["cloud/**/*.ts", "typings/**/*.ts"]
 }

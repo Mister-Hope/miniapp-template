@@ -18,13 +18,9 @@ const buildWXSS = () =>
           // preserve `@import` rules
           {
             canonicalize: (url, { fromImport }) =>
-              fromImport
-                ? new URL(`wx:import?path=${url.replace(/^import:/, "")}`)
-                : null,
+              fromImport ? new URL(`wx:import?path=${url.replace(/^import:/, "")}`) : null,
             load: (canonicalUrl) => ({
-              contents: `@import "${canonicalUrl.searchParams.get(
-                "path",
-              )}.wxss"`,
+              contents: `@import "${canonicalUrl.searchParams.get("path")}.wxss"`,
               syntax: "css",
             }),
           },
@@ -34,13 +30,11 @@ const buildWXSS = () =>
     .pipe(rename({ extname: ".wxss" }))
     .pipe(dest("dist/app"));
 
-const moveAppFiles = () =>
-  src("app/**/*.{wxml,wxs,json,svg,png,webp}").pipe(dest("dist/app"));
+const moveAppFiles = () => src("app/**/*.{wxml,wxs,json,svg,png,webp}").pipe(dest("dist/app"));
 
 const moveCloudFiles = () => src("cloud/**/*.json").pipe(dest("dist/cloud"));
 
-const watchWXSS = () =>
-  watch("app/**/*.scss", { ignoreInitial: false }, buildWXSS);
+const watchWXSS = () => watch("app/**/*.scss", { ignoreInitial: false }, buildWXSS);
 
 const buildAppTypescript = () =>
   appTSProject
@@ -64,24 +58,15 @@ const buildCloudTypescript = () =>
     .pipe(sourcemaps.write(".", { includeContent: false }))
     .pipe(dest("dist/cloud"));
 
-const watchAppTypescript = () =>
-  watch("app/**/*.ts", { ignoreInitial: false }, buildAppTypescript);
+const watchAppTypescript = () => watch("app/**/*.ts", { ignoreInitial: false }, buildAppTypescript);
 
 const watchCloudTypescript = () =>
   watch("cloud/**/*.ts", { ignoreInitial: false }, buildCloudTypescript);
 
 const watchAppFiles = () =>
-  watch(
-    "app/**/*.{wxml,wxs,json,svg,png,webp}",
-    { ignoreInitial: false },
-    moveAppFiles,
-  );
+  watch("app/**/*.{wxml,wxs,json,svg,png,webp}", { ignoreInitial: false }, moveAppFiles);
 const watchCloudFiles = () =>
-  watch(
-    "cloud/**/*.{wxml,wxs,json,svg,png}",
-    { ignoreInitial: false },
-    moveCloudFiles,
-  );
+  watch("cloud/**/*.{wxml,wxs,json,svg,png}", { ignoreInitial: false }, moveCloudFiles);
 
 const watchApp = parallel(watchWXSS, watchAppTypescript, watchAppFiles);
 

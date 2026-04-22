@@ -1,9 +1,10 @@
 {
-  "extends": "./tsconfig.base.json",
+  "extends": "@mr-hope/tsconfig/bundler.json",
   "compilerOptions": {
-    "module": "CommonJS",
-    "moduleResolution": "Node10",
-    "target": "es6",
+    "rootDir": "./",
+    "lib": ["ESNext"],
+    "target": "ES2017",
+    "outDir": "./dist",
     "types": ["miniprogram-api-typings"]
   },
   "include": ["app/**/*.ts", "typings/**/*.ts"]

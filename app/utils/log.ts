@@ -1,8 +1,7 @@
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
+// oxlint-disable typescript/no-explicit-any
+// oxlint-disable typescript/no-unsafe-argument
 /** 实时日志管理器 */
-const log = wx.getRealtimeLogManager
-  ? wx.getRealtimeLogManager()
-  : wx.getLogManager({ level: 1 });
+const log = wx.getRealtimeLogManager ? wx.getRealtimeLogManager() : wx.getLogManager({ level: 1 });
 const hasRealtime = "getRealtimeLogManager" in wx;
 
 /** 写入普通日志 */
@@ -37,6 +36,5 @@ export const error = (...args: any[]): void => {
  * @param filterMsg 过滤信息
  */
 export const fliter = (filterMsg: string): void => {
-  if (hasRealtime)
-    (log as WechatMiniprogram.RealtimeLogManager).setFilterMsg(filterMsg);
+  if (hasRealtime) (log as WechatMiniprogram.RealtimeLogManager).setFilterMsg(filterMsg);
 };

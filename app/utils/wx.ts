@@ -67,26 +67,29 @@ export const netReport = (): void => {
 
       switch (networkType) {
         case "2g":
-        case "3g":
+        case "3g": {
           tip("您的网络状态不佳");
           break;
+        }
         case "none":
-        case "unknown":
+        case "unknown": {
           tip("您没有连接到网络");
           break;
-        case "wifi":
+        }
+        case "wifi": {
           wx.getConnectedWifi({
             success: (info) => {
-              if (info.wifi.signalStrength < 0.5)
-                tip("Wifi信号不佳，网络链接失败");
+              if (info.wifi.signalStrength < 0.5) tip("Wifi信号不佳，网络链接失败");
             },
             fail: () => {
               tip("无法连接网络");
             },
           });
           break;
-        default:
+        }
+        default: {
           tip("网络连接出现问题，请稍后重试");
+        }
       }
 
       warn("Request fail with", networkType);
@@ -104,12 +107,10 @@ export const netReport = (): void => {
  *
  * @param filePath 本地缓存文件目录
  * @param cloudPath 云文件目录
+ * @returns 返回一个 Promise 对象，成功时返回云文件 ID，失败时返回错误信息
  */
-export const uploadCloudFile = (
-  filePath: string,
-  cloudPath: string,
-): Promise<string> => {
-  return new Promise((resolve, reject) => {
+export const uploadCloudFile = (filePath: string, cloudPath: string): Promise<string> =>
+  new Promise((resolve, reject) => {
     wx.cloud.uploadFile({
       cloudPath,
       filePath,
@@ -124,4 +125,3 @@ export const uploadCloudFile = (
       },
     });
   });
-};
