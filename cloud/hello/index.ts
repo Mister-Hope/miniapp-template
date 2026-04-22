@@ -1,8 +1,8 @@
-import { DYNAMIC_CURRENT_ENV, init } from "wx-server-sdk";
+import adapter from "@cloudbase/adapter-node";
+import { init, useAdapters } from "@cloudbase/js-sdk";
 
-// 初始化 cloud
-init({
-  env: DYNAMIC_CURRENT_ENV as unknown as string,
-});
+useAdapters(adapter);
+
+init({ env: "test" });
 
 export const main = (): string => "hello world";

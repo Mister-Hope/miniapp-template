@@ -1,19 +1,18 @@
-import { DYNAMIC_CURRENT_ENV, getWXContext, init } from "wx-server-sdk";
+import adapter from "@cloudbase/adapter-node";
+import { init, useAdapters } from "@cloudbase/js-sdk";
 
-// 初始化 cloud
-init({
-  env: DYNAMIC_CURRENT_ENV as unknown as string,
-});
+useAdapters(adapter);
+
+const app = init({ env: "test" });
 
 interface LoginResult {
   openid: string | undefined;
 }
 
-// eslint-disable-next-line @typescript-eslint/require-await
 export const main = async (): Promise<LoginResult> => {
-  const { OPENID } = getWXContext();
+  const { data } = await app.auth.signInWithOpenId();
 
   return {
-    openid: OPENID,
+    openid: data.user?.id as string | undefined,
   };
 };

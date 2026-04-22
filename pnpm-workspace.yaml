@@ -4,7 +4,9 @@ packages:
 
 allowBuilds:
   "@parcel/watcher": true
+  core-js-pure: true
   es5-ext: true
+  protobufjs: true
   unrs-resolver: true
 
 overrides:
