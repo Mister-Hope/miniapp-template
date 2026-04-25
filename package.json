@@ -34,7 +34,7 @@
   "devDependencies": {
     "@commitlint/cli": "20.5.0",
     "@commitlint/config-conventional": "20.5.0",
-    "@mr-hope/tsconfig": "0.0.3",
+    "@mr-hope/tsconfig": "0.0.4",
     "del": "8.0.1",
     "gulp": "5.0.1",
     "gulp-rename": "2.1.0",
