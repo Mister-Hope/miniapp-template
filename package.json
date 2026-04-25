@@ -29,7 +29,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@mptool/all": "0.13.0"
+    "@mptool/all": "0.14.0"
   },
   "devDependencies": {
     "@commitlint/cli": "20.5.0",

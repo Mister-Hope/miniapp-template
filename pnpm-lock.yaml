@@ -14,8 +14,8 @@ importers:
   .:
     dependencies:
       '@mptool/all':
-        specifier: 0.13.0
-        version: 0.13.0(miniprogram-api-typings@5.1.3)
+        specifier: 0.14.0
+        version: 0.14.0(miniprogram-api-typings@5.1.3)
     devDependencies:
       '@commitlint/cli':
         specifier: 20.5.0
@@ -418,8 +418,8 @@ packages:
     resolution: {integrity: sha512-oV4PyZfwJNtmFWhvlJLqYIX1Nn22ML8FZpS16ZUKv0hg7414xV1fjsGqxQzLT2dyK92TKxsJSwMOd7VNHAtPmA==}
     engines: {node: '>= 12'}
 
-  '@mptool/all@0.13.0':
-    resolution: {integrity: sha512-9uC5WcD6YKOZQ10twbbAJNfIH86gMWehdqvLJ5z2ZMag0MH8EVSyXGSmpkmLnDeXqTo+3sL9vsn2YncrUJugEQ==}
+  '@mptool/all@0.14.0':
+    resolution: {integrity: sha512-7ALBHRVidU/P+XoM6eGk/katmeDgOCz79wSGa4SSybMRLSiT1B+gUC6xwNE19JDomRm+VUhjoVPLXTXx+MyuWQ==}
     peerDependencies:
       miniprogram-api-typings: ^5.0.0
 
@@ -3188,7 +3188,7 @@ snapshots:
 
   '@mattiasbuelens/web-streams-adapter@0.1.0': {}
 
-  '@mptool/all@0.13.0(miniprogram-api-typings@5.1.3)':
+  '@mptool/all@0.14.0(miniprogram-api-typings@5.1.3)':
     dependencies:
       miniprogram-api-typings: 5.1.3
 
