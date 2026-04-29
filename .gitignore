@@ -7,3 +7,5 @@ dist/**
 .npmrc
 project.config.json
 project.private.config.json
+
+.DS_Store
