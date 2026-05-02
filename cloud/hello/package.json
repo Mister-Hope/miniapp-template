@@ -10,6 +10,6 @@
   },
   "dependencies": {
     "@cloudbase/adapter-node": "2.0.0",
-    "@cloudbase/js-sdk": "2.28.1"
+    "@cloudbase/js-sdk": "2.28.3"
   }
 }
