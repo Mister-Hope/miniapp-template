@@ -20,7 +20,7 @@ jobs:
           cache: pnpm
 
       - name: Install project
-        run: pnpm i --frozen-lockfile
+        run: pnpm ci
 
       - name: Build project
         run: pnpm run build

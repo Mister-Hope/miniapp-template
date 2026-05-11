@@ -18,7 +18,7 @@ const buildWXSS = () =>
           // preserve `@import` rules
           {
             canonicalize: (url, { fromImport }) =>
-              fromImport ? new URL(`wx:import?path=${url.replace(/^import:/, "")}`) : null,
+              fromImport ? new URL(`wx:import?path=${url.replace(/^import:/u, "")}`) : null,
             load: (canonicalUrl) => ({
               contents: `@import "${canonicalUrl.searchParams.get("path")}.wxss"`,
               syntax: "css",
