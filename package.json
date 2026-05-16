@@ -46,7 +46,7 @@
     "innenu-generator": "0.8.2",
     "miniprogram-api-typings": "5.2.0",
     "nano-staged": "1.0.2",
-    "oxc-config-hope": "0.3.4",
+    "oxc-config-hope": "0.3.5",
     "oxfmt": "0.48.0",
     "oxlint": "1.63.0",
     "oxlint-tsgolint": "0.22.1",
