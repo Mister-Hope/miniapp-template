@@ -55,7 +55,7 @@
     "stylelint": "17.11.0",
     "stylelint-config-hope": "11.0.0",
     "tsdown": "0.22.0",
-    "typescript": "6.0.3",
+    "typescript": "7.0.2",
     "unrun": "0.3.0"
   },
   "nano-staged": {
