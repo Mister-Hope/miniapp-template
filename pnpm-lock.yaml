@@ -1,3 +1,202 @@
+---
+lockfileVersion: '9.0'
+
+importers:
+
+  .:
+    configDependencies: {}
+    packageManagerDependencies:
+      '@pnpm/exe':
+        specifier: 11.0.9
+        version: 11.0.9
+      pnpm:
+        specifier: 11.0.9
+        version: 11.0.9
+
+packages:
+
+  '@pnpm/exe@11.0.9':
+    resolution: {integrity: sha512-d5sY2jBLVWCC+MrPCgqbDHacmkPwqIjpoBKfczbjzaaNSBN62P6k1SS6R3t4xXlJ2k83HVk9/xgk2OuPJRXpUw==}
+    hasBin: true
+
+  '@pnpm/linux-arm64@11.0.9':
+    resolution: {integrity: sha512-Kh2gPz1EffY44XFyJsWjWnzzCGn8C5K4tF242JOhlHyxN/O8qKw0nQ8jqkIhP9W9Rinl3W0Yk5cIeVGweq+bCQ==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@pnpm/linux-x64@11.0.9':
+    resolution: {integrity: sha512-jM9UFB9RpV56O30X0F+nyDDX76VBAwfo1LPpTrGFTEh4kVakPi9ypH6NXZG5yBugjOmG7vlQEl3n4EaPzKYuxA==}
+    cpu: [x64]
+    os: [linux]
+
+  '@pnpm/linuxstatic-arm64@11.0.9':
+    resolution: {integrity: sha512-vPP+OnxrZAvhOIdYhK+t99QwbXBnq9WH71Yl3IXPoU398s1zWWDBRNU3YiOBgzLCLaRLFdSxGzzzu9W4xja8CQ==}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@pnpm/linuxstatic-x64@11.0.9':
+    resolution: {integrity: sha512-zIv1jal59mOU0vd0X2D8AIuKTE1Qng5Aului7zYADjscokSEjnYlJMwjgEOZlaIm4Mj+nX/inUosvVqVTNMoIA==}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@pnpm/macos-arm64@11.0.9':
+    resolution: {integrity: sha512-kIZcdmwwtfrydWNFOvTV2lr8PKCO7lLwunGm2ApsxJt+r92PxTg22hBS3+bOK/9QaAQRQWmgncjq3a/fqKVt3A==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@pnpm/win-arm64@11.0.9':
+    resolution: {integrity: sha512-9yfujTV0CYQl5lsbVCm78mNqrx1wsEK3NhFaX0mC3QQirAuoGOnR2us0OpZZ5lwprmUWVNvKh9Qsi0p1iA3LMg==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@pnpm/win-x64@11.0.9':
+    resolution: {integrity: sha512-HMdWkllT0sjsvXw9EDRBA4p2vz06iEUhlD0Q+/66stevlffj9F8X9sAONsjz4AvoDhn8YTnsE+9oEOBJxgFZmg==}
+    cpu: [x64]
+    os: [win32]
+
+  '@reflink/reflink-darwin-arm64@0.1.19':
+    resolution: {integrity: sha512-ruy44Lpepdk1FqDz38vExBY/PVUsjxZA+chd9wozjUH9JjuDT/HEaQYA6wYN9mf041l0yLVar6BCZuWABJvHSA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@reflink/reflink-darwin-x64@0.1.19':
+    resolution: {integrity: sha512-By85MSWrMZa+c26TcnAy8SDk0sTUkYlNnwknSchkhHpGXOtjNDUOxJE9oByBnGbeuIE1PiQsxDG3Ud+IVV9yuA==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@reflink/reflink-linux-arm64-gnu@0.1.19':
+    resolution: {integrity: sha512-7P+er8+rP9iNeN+bfmccM4hTAaLP6PQJPKWSA4iSk2bNvo6KU6RyPgYeHxXmzNKzPVRcypZQTpFgstHam6maVg==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@reflink/reflink-linux-arm64-musl@0.1.19':
+    resolution: {integrity: sha512-37iO/Dp6m5DDaC2sf3zPtx/hl9FV3Xze4xoYidrxxS9bgP3S8ALroxRK6xBG/1TtfXKTvolvp+IjrUU6ujIGmA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@reflink/reflink-linux-x64-gnu@0.1.19':
+    resolution: {integrity: sha512-jbI8jvuYCaA3MVUdu8vLoLAFqC+iNMpiSuLbxlAgg7x3K5bsS8nOpTRnkLF7vISJ+rVR8W+7ThXlXlUQ93ulkw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@reflink/reflink-linux-x64-musl@0.1.19':
+    resolution: {integrity: sha512-e9FBWDe+lv7QKAwtKOt6A2W/fyy/aEEfr0g6j/hWzvQcrzHCsz07BNQYlNOjTfeytrtLU7k449H1PI95jA4OjQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@reflink/reflink-win32-arm64-msvc@0.1.19':
+    resolution: {integrity: sha512-09PxnVIQcd+UOn4WAW73WU6PXL7DwGS6wPlkMhMg2zlHHG65F3vHepOw06HFCq+N42qkaNAc8AKIabWvtk6cIQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@reflink/reflink-win32-x64-msvc@0.1.19':
+    resolution: {integrity: sha512-E//yT4ni2SyhwP8JRjVGWr3cbnhWDiPLgnQ66qqaanjjnMiu3O/2tjCPQXlcGc/DEYofpDc9fvhv6tALQsMV9w==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+
+  '@reflink/reflink@0.1.19':
+    resolution: {integrity: sha512-DmCG8GzysnCZ15bres3N5AHCmwBwYgp0As6xjhQ47rAUTUXxJiK+lLUxaGsX3hd/30qUpVElh05PbGuxRPgJwA==}
+    engines: {node: '>= 10'}
+
+  detect-libc@2.1.2:
+    resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
+    engines: {node: '>=8'}
+
+  pnpm@11.0.9:
+    resolution: {integrity: sha512-NM6C5ngCM8+crYaFApqPgdLgYZbFqbrZiHn3QklAxoF8TkUk+304uFU87tSLl1i4668avTYAwjLEyM9zZghvOA==}
+    engines: {node: '>=22.13'}
+    hasBin: true
+
+snapshots:
+
+  '@pnpm/exe@11.0.9':
+    dependencies:
+      '@reflink/reflink': 0.1.19
+      detect-libc: 2.1.2
+    optionalDependencies:
+      '@pnpm/linux-arm64': 11.0.9
+      '@pnpm/linux-x64': 11.0.9
+      '@pnpm/linuxstatic-arm64': 11.0.9
+      '@pnpm/linuxstatic-x64': 11.0.9
+      '@pnpm/macos-arm64': 11.0.9
+      '@pnpm/win-arm64': 11.0.9
+      '@pnpm/win-x64': 11.0.9
+
+  '@pnpm/linux-arm64@11.0.9':
+    optional: true
+
+  '@pnpm/linux-x64@11.0.9':
+    optional: true
+
+  '@pnpm/linuxstatic-arm64@11.0.9':
+    optional: true
+
+  '@pnpm/linuxstatic-x64@11.0.9':
+    optional: true
+
+  '@pnpm/macos-arm64@11.0.9':
+    optional: true
+
+  '@pnpm/win-arm64@11.0.9':
+    optional: true
+
+  '@pnpm/win-x64@11.0.9':
+    optional: true
+
+  '@reflink/reflink-darwin-arm64@0.1.19':
+    optional: true
+
+  '@reflink/reflink-darwin-x64@0.1.19':
+    optional: true
+
+  '@reflink/reflink-linux-arm64-gnu@0.1.19':
+    optional: true
+
+  '@reflink/reflink-linux-arm64-musl@0.1.19':
+    optional: true
+
+  '@reflink/reflink-linux-x64-gnu@0.1.19':
+    optional: true
+
+  '@reflink/reflink-linux-x64-musl@0.1.19':
+    optional: true
+
+  '@reflink/reflink-win32-arm64-msvc@0.1.19':
+    optional: true
+
+  '@reflink/reflink-win32-x64-msvc@0.1.19':
+    optional: true
+
+  '@reflink/reflink@0.1.19':
+    optionalDependencies:
+      '@reflink/reflink-darwin-arm64': 0.1.19
+      '@reflink/reflink-darwin-x64': 0.1.19
+      '@reflink/reflink-linux-arm64-gnu': 0.1.19
+      '@reflink/reflink-linux-arm64-musl': 0.1.19
+      '@reflink/reflink-linux-x64-gnu': 0.1.19
+      '@reflink/reflink-linux-x64-musl': 0.1.19
+      '@reflink/reflink-win32-arm64-msvc': 0.1.19
+      '@reflink/reflink-win32-x64-msvc': 0.1.19
+
+  detect-libc@2.1.2: {}
+
+  pnpm@11.0.9: {}
+
+---
 lockfileVersion: '9.0'
 
 settings:
@@ -99,8 +298,8 @@ importers:
         specifier: 2.0.0
         version: 2.0.0(@cloudbase/adapter-interface@0.7.1)(@cloudbase/utilities@3.0.4)(jsonwebtoken@9.0.3)(web-streams-polyfill@4.2.0)(ws@8.20.0)
       '@cloudbase/js-sdk':
-        specifier: 2.28.5
-        version: 2.28.5(jsonwebtoken@9.0.3)(ws@8.20.0)
+        specifier: 3.9.2
+        version: 3.9.2
 
   cloud/login:
     dependencies:
@@ -108,8 +307,8 @@ importers:
         specifier: 2.0.0
         version: 2.0.0(@cloudbase/adapter-interface@0.7.1)(@cloudbase/utilities@3.0.4)(jsonwebtoken@9.0.3)(web-streams-polyfill@4.2.0)(ws@8.20.0)
       '@cloudbase/js-sdk':
-        specifier: 2.28.5
-        version: 2.28.5(jsonwebtoken@9.0.3)(ws@8.20.0)
+        specifier: 3.9.2
+        version: 3.9.2
 
 packages:
 
@@ -166,84 +365,20 @@ packages:
   '@cloudbase/adapter-wx_mp@1.3.1':
     resolution: {integrity: sha512-rS0N1aD1a0zc421ds17/HzM4RChQ6T2ixMz87bhPJ1yveqJt/KUqYxiXJDWhZ803wwTmJs8aqNkgugsNusNhbg==}
 
-  '@cloudbase/ai@2.28.5':
-    resolution: {integrity: sha512-Q/pzIDUXaNMjVYH/WtH3vpRTmisyJmJ6RxXOtI8Nwfs7rydwozjKAVsTN+oBcSeE0FOE/Zoq32g2QitLzaDGHg==}
+  '@cloudbase/js-sdk@3.9.2':
+    resolution: {integrity: sha512-ZxxKYipzDC1itobhzXhJgBw2iTmlAIV5iWo9qUgdD4YS2RqCfb2ZDug/dDJRviz8mTDQZeT6ZZahP59O01asyA==}
 
-  '@cloudbase/analytics@2.28.5':
-    resolution: {integrity: sha512-WiqSk83RvVIChnOWNr9hAPNIEJx62/Wy+56zYo2LXPnByLuzp7EHdLozg7HDBPKpVs5NWdjwUfU6zhqnC+o2Ow==}
-
-  '@cloudbase/apis@2.28.5':
-    resolution: {integrity: sha512-J7O3GDuIdugUE6xLZz1wrJcgw7jr/beeKXWoeSjbvYGmgHvGO2V5dLSY0HE6+m1rKz2FVSg4WZ2zEmUA9q7Uqg==}
-
-  '@cloudbase/app@2.28.5':
-    resolution: {integrity: sha512-rcBDQrJb+0KH1Q9yn2SDjjFyt+kVr77a7DvFd5d3Fl1Rsjd61SRt0/PTKxbHLAGaWq30yQ5hQ/9wGdu9MtajrQ==}
-    peerDependencies:
-      '@cloudbase/signature-nodejs': '>=1.0.0'
-      jsonwebtoken: '>=8.0.0'
-      ws: ^8.18.0
-    peerDependenciesMeta:
-      '@cloudbase/signature-nodejs':
-        optional: true
-      jsonwebtoken:
-        optional: true
-      ws:
-        optional: true
-
-  '@cloudbase/auth@2.28.5':
-    resolution: {integrity: sha512-S474Pc6NfC+pV2BHOdO2klLpCxQzoQg8L6MqIcHO/RifnWOY2g5f1hyeKMgEQTOZlybAi2vKWpfwqdMpacwnyg==}
-
-  '@cloudbase/cloudrun@2.28.5':
-    resolution: {integrity: sha512-S+ZtBHSjZsyHYZzKLKsV0dis01pqqvPlRYsqGfZ5ZXzrcR61xXkuadOBPigxk3+BWLIQ/RXt+zFvS6hqbcjEtg==}
-
-  '@cloudbase/database@0.12.1':
-    resolution: {integrity: sha512-SLZ1j0t6IIkTNdXnqIvLZLHNARtLREIuXP/TuR17Fssa00KYCkm3HS6gkEx3ve7qf6VH79G3vpTD4ODKq4efLA==}
-
-  '@cloudbase/functions@2.28.5':
-    resolution: {integrity: sha512-dhX+sLcNmgdjRbb5nZaTE0iirqcQOhJBBSqEiqk8t6Tm7Owoj2ld6ZtgN4ekPWnpaYDfeG2ZJIL92HcRxHYrLg==}
-
-  '@cloudbase/js-sdk@2.28.5':
-    resolution: {integrity: sha512-igSY2LFVqgwyBMMyaKD7OvDl89XMqB8QWDY8bMIaNIs5bjkB7maWztFQ1/ZV/LhKP8JhFCo0iR2115zKEj8dKA==}
-
-  '@cloudbase/model@2.28.5':
-    resolution: {integrity: sha512-KQSbxzNgAVmDTKzX2cooL4oeFXDQscfmHqDMzxTT7FfUtVGOdqj9oXNAyR8ER06+uZ5/lmnFrheWnhEPWRUArg==}
-
-  '@cloudbase/mysql@2.28.5':
-    resolution: {integrity: sha512-IM4DywpU0ojF/z3+G4/SKAUaiYJzy9BtJc6Znha/S60a2SiArzXXtUoBVtzQyTciD9NxrpXSJ0q3/sIsYSjMAg==}
-
-  '@cloudbase/oauth@2.28.5':
-    resolution: {integrity: sha512-cUYzMYJTZ4n/w9xt6xZhi3K2IBFOaeUSRaq2W7+ZO/UYs5DWo7NOwgFnPfj6GCMNVKZ9o9bUzpPOnkTj0P55yw==}
-    peerDependencies:
-      '@cloudbase/utilities': 2.25.0
-
-  '@cloudbase/realtime@2.28.5':
-    resolution: {integrity: sha512-K2Tzp2UTwDm95JuaO5HCo+iNXIHH22PFKcPHuooct/Wuxt8xxUnoB9XQUjApnD0X0Bt4uzckJvsnLODmoGx6nQ==}
-
-  '@cloudbase/storage@2.28.5':
-    resolution: {integrity: sha512-8lj07SEE8dsCj7YMtIB5287kfVVWS/27LUk7elugy/kvZrdUu5BNpljFaZlKhgWYlP2TJJ3kmUQ3Y+Bc3Jf4lg==}
-
-  '@cloudbase/types@2.20.3':
-    resolution: {integrity: sha512-oBFj5hJ4eFc32OoOiE8UopL5lDacZReg56yNlbPGhoRLGbNe2Wk4QV+VeIo2n/TtVzo6Ctb7hQGmJ+peECIiuQ==}
-
-  '@cloudbase/types@2.28.5':
-    resolution: {integrity: sha512-7yIdZseEoYJhAp7Z2T/hz8tyTsd2GGtbUIuNASvS2rQhX9M7b+rvpDxU6aA3wKkLGbZBlPRyQQCzhtDHSWaBCQ==}
+  '@cloudbase/signature-nodejs@2.0.0':
+    resolution: {integrity: sha512-eFtRiZuD21+/s/4opejhcN8msFLBK5POwkT445yyA47kps35qXrHGqlLQgt00bmRU4VtjwN6LHr2O3PjHjWW6Q==}
 
   '@cloudbase/types@3.0.4':
     resolution: {integrity: sha512-YTTmdQsJDaZmTfO1BVN9WgsuHijEZANPiGGMlHd5ksvCmXv2MP/gNQSUBZSMh0ENvuQia1coJNI4zPD/gL986Q==}
 
-  '@cloudbase/utilities@2.20.3':
-    resolution: {integrity: sha512-SjRok91CfqiEHk1Mjzc9uW61CewssW3c8pjs+EPHb2et/C764W5mt3Gr2SP5yEw23X1HS50uNHXfWZu7ZbG4AQ==}
-
-  '@cloudbase/utilities@2.28.5':
-    resolution: {integrity: sha512-QrLcADQeDQ351362rVxJloPex7h7zIhScoohkqp2c/dAKUUn1mh2x1qSoht+u2qybQt98wfuOxMqJpmEcl5F3Q==}
-
   '@cloudbase/utilities@3.0.4':
     resolution: {integrity: sha512-RoSs2yRfzjmfdjm6u666U/ENHOUInOBnjcccrmfighcX+uLIWtX6DhxnKIPC4GyReNlvHBn5dqpkfjD4U735xg==}
 
-  '@cloudbase/wx-cloud-client-sdk@1.8.6-beta.1':
-    resolution: {integrity: sha512-KHu2Pe11Cgu+AZJ7kNZtsana0nG/1xpj1vsaydkMpVLnmdfWNk4PttkItpTPHxhhd1Saxvn3ztj+j5QxzaNtqg==}
-
-  '@cloudbase/wx-cloud-client-sdk@1.8.8':
-    resolution: {integrity: sha512-NuvDzKG0U68JSYzudNE9nh0sF3y5hUl/cz+mS+tk6TDLz+b1iikx+U+nR+bf+pfcJVhPW4Sjx+hI9CdKDA5/Ww==}
+  '@cloudbase/wx-cloud-client-sdk@1.8.10':
+    resolution: {integrity: sha512-XtWR1zNwKUqnAK1psvhK93EUnZBWhVorUdA1lHNWyI661YsdpLcxPRiX+/yoIrTo24MJyd/KguSuHluq3hsHqA==}
 
   '@commitlint/cli@21.0.0':
     resolution: {integrity: sha512-p3y2oC0G2R45zaadMwBxCiSesS8digi5RDplP3Zrfpzm7xIgrgAj0W4fGzONjpHyg8obDVJDU45g5txzeMcblg==}
@@ -935,6 +1070,9 @@ packages:
   '@tybys/wasm-util@0.10.2':
     resolution: {integrity: sha512-RoBvJ2X0wuKlWFIjrwffGw1IqZHKQqzIchKaadZZfnNpsAYp2mM0h36JtPCjNDAHGgYez/15uMBpfGwchhiMgg==}
 
+  '@types/clone@2.1.4':
+    resolution: {integrity: sha512-NKRWaEGaVGVLnGLB2GazvDaZnyweW9FJLLFL5LhywGJB3aqGMT9R/EUoJoSRP4nzofYnZysuDmrEJtJdAqUOtQ==}
+
   '@types/estree@1.0.9':
     resolution: {integrity: sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==}
 
@@ -1095,9 +1233,9 @@ packages:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
     engines: {node: '>=8'}
 
-  bson@7.2.0:
-    resolution: {integrity: sha512-YCEo7KjMlbNlyHhz7zAZNDpIpQbd+wOEHJYezv0nMYTn4x31eIUM2yomNNubclAt63dObUzKHWsBLJ9QcZNSnQ==}
-    engines: {node: '>=20.19.0'}
+  bson@6.10.4:
+    resolution: {integrity: sha512-WIsKqkSC0ABoBJuT1LEX+2HEvNmNKKgnTAyd0fL8qzK4SH2i9NXg+t08YtdZp/V9IZ33cxe3iV4yM0qg8lMQng==}
+    engines: {node: '>=16.20.1'}
 
   buffer-equal-constant-time@1.0.1:
     resolution: {integrity: sha512-zRpUiDwd/xk6ADqPMATG8vc9VPrkck7T07OIx0gnjmJAnHnTVXNQG3vfvWNuiZIkwu9KrKdA1iJKfsfTVxE6NA==}
@@ -1525,6 +1663,7 @@ packages:
   git-raw-commits@5.0.1:
     resolution: {integrity: sha512-Y+csSm2GD/PCSh6Isd/WiMjNAydu0VBiG9J7EdQsNA5P9uXvLayqjmTsNlK5Gs9IhblFZqOU0yid5Il5JPoLiQ==}
     engines: {node: '>=18'}
+    deprecated: Deprecated and no longer maintained. Use @conventional-changelog/git-client instead.
     hasBin: true
 
   glob-parent@5.1.2:
@@ -1788,6 +1927,10 @@ packages:
     resolution: {integrity: sha512-Kw/ReK0iqwKeu0MITLFuj0jbPAmEiOsIwyIXvvbfa6QfmN9pkD1M+8pdk7Rl/dTKbH34/XBFMbgD4iMJhLQbGA==}
     engines: {node: '>=0.10.0'}
 
+  is-stream@2.0.1:
+    resolution: {integrity: sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==}
+    engines: {node: '>=8'}
+
   is-type-of@1.4.0:
     resolution: {integrity: sha512-EddYllaovi5ysMLMEN7yzHEKh8A850cZ7pykrY1aNRQGn/CDjRDE9qEWbIdt7xGEVJmjBXzU/fNnC4ABTm8tEQ==}
 
@@ -1997,6 +2140,15 @@ packages:
   node-addon-api@7.1.1:
     resolution: {integrity: sha512-5m3bsyrjFWE1xf7nz7YXdN4udnVtXK6/Yfgn5qnahL6bCkf2yKt4k3nuTKAtT4r3IG8JNR2ncsIMdZuAzJjHQQ==}
 
+  node-fetch@2.7.0:
+    resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
+    engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
+
   node-hex@1.0.1:
     resolution: {integrity: sha512-iwpZdvW6Umz12ICmu9IYPRxg0tOLGmU3Tq2tKetejCj3oZd7b2nUXwP3a7QA5M9glWy8wlPS1G3RwM/CdsUbdQ==}
     engines: {node: '>=8.0.0'}
@@ -2190,6 +2342,9 @@ packages:
   pump@3.0.4:
     resolution: {integrity: sha512-VS7sjc6KR7e1ukRFhQSY5LM2uBWAUPiOPa/A3mkKmiMwSmRFUITt0xuj+/lesgnCv+dPIEYlkzrcyXgquIHMcA==}
 
+  punycode@1.4.1:
+    resolution: {integrity: sha512-jmYNElW7yvO7TV33CjSmvSiE2yco3bV2czu/OzDKdMNVZQWfxCblURLhf+47syQRBntjfLdd/H0egrzIG+oaFQ==}
+
   qified@0.10.1:
     resolution: {integrity: sha512-+Owyggi9IxT1ePKGafcI87ubSmxol6smwJ+RAHDQlx9+9cPwFWDiKFFCPuWhr9ignlGpZ9vDQLw67N4dcTVFEA==}
     engines: {node: '>=20'}
@@ -2222,6 +2377,9 @@ packages:
   rechoir@0.8.0:
     resolution: {integrity: sha512-/vxpCXddiX8NGfGO/mTafwjq4aFa/71pvamip0++IQk3zG8cbCj0fifNPrjjF1XMXUne91jL9OoxmdykoEtifQ==}
     engines: {node: '>= 10.13.0'}
+
+  regenerator-runtime@0.14.1:
+    resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
 
   remove-trailing-separator@1.1.0:
     resolution: {integrity: sha512-/hS+Y0u3aOfIETiaiirUFwDBDzmXPvO+jAfKTitUngIPzdKc6Z0LoFjM/CK5PL4C+eKwHohlHAb6H0VFfmmUsw==}
@@ -2576,6 +2734,9 @@ packages:
     resolution: {integrity: sha512-y8MN937s/HVhEoBU1SxfHC+wxCHkV1a9gW8eAdTadYh/bGyesZIVcbjI+mSpFbSVwQici/XjBjuUyri1dnXwBw==}
     engines: {node: '>=10.13.0'}
 
+  tr46@0.0.3:
+    resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
+
   tree-kill@1.2.2:
     resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
     hasBin: true
@@ -2669,6 +2830,10 @@ packages:
     resolution: {integrity: sha512-VjBBquch25nUGMuVBpOb2Cj3gc8Kb7lJBqbsXR/0anZ/5uJsL14Kpth9JKfnBsckxCfgIp6hPvcvvmZ97R9X7g==}
     engines: {node: '>=20'}
 
+  url@0.11.4:
+    resolution: {integrity: sha512-oCwdVC7mTuWiPyjLUz/COz5TLk6wgp0RCsN+wHZ2Ekneac9w8uuV0njcbbie2ME+Vs+d6duwmYuR3HgQXs1fOg==}
+    engines: {node: '>= 0.4'}
+
   urllib@2.44.0:
     resolution: {integrity: sha512-zRCJqdfYllRDA9bXUtx+vccyRqtJPKsw85f44zH7zPD28PIvjMqIgw9VwoTLV7xTBWZsbebUFVHU5ghQcWku2A==}
     engines: {node: '>= 0.10.0'}
@@ -2719,6 +2884,12 @@ packages:
   web-streams-polyfill@4.2.0:
     resolution: {integrity: sha512-0rYDzGOh9EZpig92umN5g5D/9A1Kff7k0/mzPSSCY8jEQeYkgRMoY7LhbXtUCWzLCMX0TUE9aoHkjFNB7D9pfA==}
     engines: {node: '>= 8'}
+
+  webidl-conversions@3.0.1:
+    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
+
+  whatwg-url@5.0.0:
+    resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
 
   which@1.3.1:
     resolution: {integrity: sha512-HxJdYWq1MTIQbJ3nw0cqssHoTNU267KlrDuGZ1WYlxDStUtKUhOaJmh112/TZmHxxUfuJqPXSOm7tDyas0OSIQ==}
@@ -2851,128 +3022,39 @@ snapshots:
       '@cloudbase/adapter-interface': 0.7.1
       web-streams-polyfill: 4.2.0
 
-  '@cloudbase/ai@2.28.5':
+  '@cloudbase/js-sdk@3.9.2':
     dependencies:
-      '@cloudbase/types': 2.28.5
-      '@cloudbase/utilities': 2.28.5
+      '@cloudbase/adapter-interface': 0.7.1
+      '@cloudbase/adapter-wx_mp': 1.3.1
+      '@cloudbase/wx-cloud-client-sdk': 1.8.10
       '@mattiasbuelens/web-streams-adapter': 0.1.0
+      bson: 6.10.4
+      jwt-decode: 3.1.2
+      lodash: 4.18.1
+      regenerator-runtime: 0.14.1
       text-encoding-shim: 1.0.5
       web-streams-polyfill: 4.2.0
-
-  '@cloudbase/analytics@2.28.5':
-    dependencies:
-      '@cloudbase/types': 2.28.5
-      '@cloudbase/utilities': 2.28.5
-
-  '@cloudbase/apis@2.28.5':
-    dependencies:
-      '@cloudbase/types': 2.28.5
-      '@cloudbase/utilities': 2.28.5
-
-  '@cloudbase/app@2.28.5(jsonwebtoken@9.0.3)(ws@8.20.0)':
-    dependencies:
-      '@cloudbase/adapter-interface': 0.7.1
-      '@cloudbase/adapter-wx_mp': 1.3.1
-      '@cloudbase/types': 2.28.5
-      '@cloudbase/utilities': 2.28.5
     optionalDependencies:
+      '@cloudbase/signature-nodejs': 2.0.0
       jsonwebtoken: 9.0.3
+      node-fetch: 2.7.0
       ws: 8.20.0
-
-  '@cloudbase/auth@2.28.5':
-    dependencies:
-      '@cloudbase/adapter-wx_mp': 1.3.1
-      '@cloudbase/oauth': 2.28.5(@cloudbase/utilities@2.28.5)
-      '@cloudbase/utilities': 2.28.5
-
-  '@cloudbase/cloudrun@2.28.5':
-    dependencies:
-      '@cloudbase/adapter-interface': 0.7.1
-      '@cloudbase/types': 2.28.5
-      '@cloudbase/utilities': 2.28.5
-
-  '@cloudbase/database@0.12.1':
-    dependencies:
-      bson: 7.2.0
-
-  '@cloudbase/functions@2.28.5':
-    dependencies:
-      '@cloudbase/adapter-interface': 0.7.1
-      '@cloudbase/cloudrun': 2.28.5
-      '@cloudbase/types': 2.28.5
-      '@cloudbase/utilities': 2.28.5
-
-  '@cloudbase/js-sdk@2.28.5(jsonwebtoken@9.0.3)(ws@8.20.0)':
-    dependencies:
-      '@cloudbase/adapter-interface': 0.7.1
-      '@cloudbase/ai': 2.28.5
-      '@cloudbase/analytics': 2.28.5
-      '@cloudbase/apis': 2.28.5
-      '@cloudbase/app': 2.28.5(jsonwebtoken@9.0.3)(ws@8.20.0)
-      '@cloudbase/auth': 2.28.5
-      '@cloudbase/cloudrun': 2.28.5
-      '@cloudbase/database': 0.12.1
-      '@cloudbase/functions': 2.28.5
-      '@cloudbase/model': 2.28.5
-      '@cloudbase/mysql': 2.28.5
-      '@cloudbase/realtime': 2.28.5
-      '@cloudbase/storage': 2.28.5
-      '@cloudbase/types': 2.28.5
-      '@cloudbase/utilities': 2.28.5
     transitivePeerDependencies:
-      - '@cloudbase/signature-nodejs'
-      - jsonwebtoken
-      - ws
+      - bufferutil
+      - encoding
+      - utf-8-validate
 
-  '@cloudbase/model@2.28.5':
+  '@cloudbase/signature-nodejs@2.0.0':
     dependencies:
-      '@cloudbase/types': 2.28.5
-      '@cloudbase/utilities': 2.28.5
-      '@cloudbase/wx-cloud-client-sdk': 1.8.8
-
-  '@cloudbase/mysql@2.28.5':
-    dependencies:
-      '@cloudbase/types': 2.20.3
-      '@cloudbase/utilities': 2.20.3
-      '@cloudbase/wx-cloud-client-sdk': 1.8.6-beta.1
-
-  '@cloudbase/oauth@2.28.5(@cloudbase/utilities@2.28.5)':
-    dependencies:
-      '@cloudbase/utilities': 2.28.5
-
-  '@cloudbase/realtime@2.28.5':
-    dependencies:
-      '@cloudbase/types': 2.28.5
-      lodash: 4.18.1
-
-  '@cloudbase/storage@2.28.5':
-    dependencies:
-      '@cloudbase/types': 2.28.5
-      '@cloudbase/utilities': 2.28.5
-
-  '@cloudbase/types@2.20.3':
-    dependencies:
-      '@cloudbase/adapter-interface': 0.7.1
-
-  '@cloudbase/types@2.28.5':
-    dependencies:
-      '@cloudbase/adapter-interface': 0.7.1
+      '@types/clone': 2.1.4
+      clone: 2.1.2
+      is-stream: 2.0.1
+      url: 0.11.4
+    optional: true
 
   '@cloudbase/types@3.0.4':
     dependencies:
       '@cloudbase/adapter-interface': 0.7.1
-
-  '@cloudbase/utilities@2.20.3':
-    dependencies:
-      '@cloudbase/adapter-interface': 0.7.1
-      '@cloudbase/types': 2.20.3
-      jwt-decode: 3.1.2
-
-  '@cloudbase/utilities@2.28.5':
-    dependencies:
-      '@cloudbase/adapter-interface': 0.7.1
-      '@cloudbase/types': 2.28.5
-      jwt-decode: 3.1.2
 
   '@cloudbase/utilities@3.0.4':
     dependencies:
@@ -2980,12 +3062,7 @@ snapshots:
       '@cloudbase/types': 3.0.4
       jwt-decode: 3.1.2
 
-  '@cloudbase/wx-cloud-client-sdk@1.8.6-beta.1':
-    dependencies:
-      '@cloudbase/adapter-wx_mp': 1.3.1
-      core-js-pure: 3.49.0
-
-  '@cloudbase/wx-cloud-client-sdk@1.8.8':
+  '@cloudbase/wx-cloud-client-sdk@1.8.10':
     dependencies:
       '@cloudbase/adapter-wx_mp': 1.3.1
       core-js-pure: 3.49.0
@@ -3485,6 +3562,9 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
+  '@types/clone@2.1.4':
+    optional: true
+
   '@types/estree@1.0.9': {}
 
   '@types/expect@1.20.4': {}
@@ -3635,7 +3715,7 @@ snapshots:
     dependencies:
       fill-range: 7.1.1
 
-  bson@7.2.0: {}
+  bson@6.10.4: {}
 
   buffer-equal-constant-time@1.0.1: {}
 
@@ -4367,6 +4447,9 @@ snapshots:
     dependencies:
       is-unc-path: 1.0.0
 
+  is-stream@2.0.1:
+    optional: true
+
   is-type-of@1.4.0:
     dependencies:
       core-util-is: 1.0.3
@@ -4545,6 +4628,11 @@ snapshots:
   next-tick@1.1.0: {}
 
   node-addon-api@7.1.1:
+    optional: true
+
+  node-fetch@2.7.0:
+    dependencies:
+      whatwg-url: 5.0.0
     optional: true
 
   node-hex@1.0.1: {}
@@ -4747,6 +4835,9 @@ snapshots:
       end-of-stream: 1.4.5
       once: 1.4.0
 
+  punycode@1.4.1:
+    optional: true
+
   qified@0.10.1:
     dependencies:
       hookified: 2.2.0
@@ -4784,6 +4875,8 @@ snapshots:
   rechoir@0.8.0:
     dependencies:
       resolve: 1.22.12
+
+  regenerator-runtime@0.14.1: {}
 
   remove-trailing-separator@1.1.0: {}
 
@@ -5198,6 +5291,9 @@ snapshots:
       - bare-abort-controller
       - react-native-b4a
 
+  tr46@0.0.3:
+    optional: true
+
   tree-kill@1.2.2: {}
 
   tsdown@0.22.0(typescript@6.0.3)(unrun@0.3.0):
@@ -5264,6 +5360,12 @@ snapshots:
       rolldown: 1.0.0
 
   upath@3.0.7: {}
+
+  url@0.11.4:
+    dependencies:
+      punycode: 1.4.1
+      qs: 6.15.1
+    optional: true
 
   urllib@2.44.0:
     dependencies:
@@ -5358,6 +5460,15 @@ snapshots:
       - react-native-b4a
 
   web-streams-polyfill@4.2.0: {}
+
+  webidl-conversions@3.0.1:
+    optional: true
+
+  whatwg-url@5.0.0:
+    dependencies:
+      tr46: 0.0.3
+      webidl-conversions: 3.0.1
+    optional: true
 
   which@1.3.1:
     dependencies:
