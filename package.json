@@ -43,7 +43,7 @@
     "gulp-typescript": "6.0.0-alpha.1",
     "gulp5-sass-plugin": "2.1.0",
     "husky": "9.1.7",
-    "innenu-generator": "0.8.2",
+    "innenu-generator": "0.24.2",
     "miniprogram-api-typings": "5.2.0",
     "nano-staged": "1.0.2",
     "oxc-config-hope": "0.3.4",
