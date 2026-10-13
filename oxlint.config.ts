@@ -53,6 +53,8 @@ export default defineHopeConfig(
     files: ["typings/**/*.d.ts"],
     rules: {
       "id-length": "off",
+      // declaration files mimic DOM lib typings, where method signatures are the convention
+      "typescript/method-signature-style": "off",
     },
   },
 );

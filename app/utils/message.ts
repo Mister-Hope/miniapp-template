@@ -16,7 +16,7 @@ type EventBus<T extends any[] = any[]> = Record<string, EventHandler<T>[]>;
 
 /** 发布 / 订阅模块 */
 class Message {
-  public constructor() {
+  constructor() {
     this.eventObject = {};
   }
 
@@ -31,12 +31,8 @@ class Message {
    * @param once 是否只处理一次
    * @returns 取消监听函数
    */
-  // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-parameters
-  public on<T extends any[]>(
-    eventId: string,
-    handler: (...args: T) => void,
-    once = false,
-  ): () => void {
+  // oxlint-disable-next-line typescript/no-unnecessary-type-parameters
+  on<T extends any[]>(eventId: string, handler: (...args: T) => void, once = false): () => void {
     // 如果时间对象中不存在 eventId，则初始化一个空数组
     if (!this.eventObject[eventId]) this.eventObject[eventId] = [];
 
@@ -57,8 +53,8 @@ class Message {
    *   - 设置为`all`即取消所有
    * @param handler 需要取消的监听处理函数，不填则取消所有监听处理函数
    */
-  // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-parameters
-  public off<T extends any[]>(eventId: string | string[], handler: (...args: T) => void): void {
+  // oxlint-disable-next-line typescript/no-unnecessary-type-parameters
+  off<T extends any[]>(eventId: string | string[], handler: (...args: T) => void): void {
     /** 需要移除的监听id列表 */
     const idList = Array.isArray(eventId)
       ? eventId
@@ -86,7 +82,7 @@ class Message {
    * @param eventId 订阅事件名称
    * @param args 参数
    */
-  public emit(eventId: string, ...args: any[]): void {
+  emit(eventId: string, ...args: any[]): void {
     /** 事件处理器 */
     this.eventObject[eventId] = (this.eventObject[eventId] || []).filter((evtObj) => {
       try {

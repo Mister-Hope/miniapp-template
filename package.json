@@ -29,13 +29,13 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@mptool/all": "0.14.0"
+    "@mptool/all": "0.19.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "21.0.0",
-    "@commitlint/config-conventional": "21.0.0",
+    "@commitlint/cli": "21.2.3",
+    "@commitlint/config-conventional": "21.2.3",
     "@mr-hope/tsconfig": "0.0.4",
-    "del": "8.0.1",
+    "del": "9.0.1",
     "gulp": "5.0.1",
     "gulp-rename": "2.1.0",
     "gulp-replace": "1.1.4",
@@ -43,20 +43,20 @@
     "gulp-typescript": "6.0.0-alpha.1",
     "gulp5-sass-plugin": "2.1.0",
     "husky": "9.1.7",
-    "innenu-generator": "0.8.2",
-    "miniprogram-api-typings": "5.2.0",
+    "innenu-generator": "0.25.0",
+    "miniprogram-api-typings": "5.2.3",
     "nano-staged": "1.0.2",
-    "oxc-config-hope": "0.3.4",
-    "oxfmt": "0.48.0",
-    "oxlint": "1.63.0",
-    "oxlint-tsgolint": "0.22.1",
-    "postcss": "^8.5.14",
-    "prettier": "3.8.3",
-    "stylelint": "17.11.0",
-    "stylelint-config-hope": "11.0.0",
-    "tsdown": "0.22.0",
+    "oxc-config-hope": "0.3.15",
+    "oxfmt": "0.72.0",
+    "oxlint": "1.87.0",
+    "oxlint-tsgolint": "7.0.2004",
+    "postcss": "^8.5.29",
+    "prettier": "3.9.10",
+    "stylelint": "17.16.0",
+    "stylelint-config-hope": "12.1.0",
+    "tsdown": "0.23.1",
     "typescript": "6.0.3",
-    "unrun": "0.3.0"
+    "unrun": "0.3.1"
   },
   "nano-staged": {
     "**/*": "oxfmt --no-error-on-unmatched-pattern",
@@ -89,7 +89,7 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "11.0.9",
+      "version": "12.11.2",
       "onFail": "download"
     },
     "runtime": {

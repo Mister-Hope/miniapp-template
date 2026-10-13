@@ -96,12 +96,14 @@ const build = parallel(
   moveCloudFiles,
 );
 
-exports.watchApp = watchApp;
-exports.watchCloud = watchCloud;
-exports.watch = watchCommand;
+module.exports = {
+  watchApp,
+  watchCloud,
+  watch: watchCommand,
 
-exports.buildApp = buildApp;
-exports.buildCloud = buildCloud;
-exports.build = build;
+  buildApp,
+  buildCloud,
+  build,
 
-exports.default = build;
+  default: build,
+};

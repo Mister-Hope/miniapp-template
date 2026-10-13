@@ -13,3 +13,9 @@ overrides:
   css: npm:@adobe/css-tools@^4.4.3
   postcss: ^8.5.10
   vinyl-fs: ^4.0.2
+
+virtualStoreType: global
+
+trustPolicy: no-downgrade
+trustPolicyExcludePrune: true
+trustPolicyIgnoreAfter: 720
