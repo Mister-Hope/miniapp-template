@@ -198,7 +198,7 @@ importers:
         version: 1.1.4
       gulp-sourcemaps:
         specifier: 3.0.0
-        version: 3.0.0
+        version: 3.0.0(supports-color@10.2.2)
       gulp-typescript:
         specifier: 6.0.0-alpha.1
         version: 6.0.0-alpha.1(typescript@6.0.3)
@@ -210,7 +210,7 @@ importers:
         version: 9.1.7
       innenu-generator:
         specifier: 0.25.0
-        version: 0.25.0
+        version: 0.25.0(supports-color@10.2.2)
       miniprogram-api-typings:
         specifier: 5.2.3
         version: 5.2.3
@@ -237,10 +237,10 @@ importers:
         version: 3.9.10
       stylelint:
         specifier: 17.16.0
-        version: 17.16.0(typescript@6.0.3)
+        version: 17.16.0(supports-color@10.2.2)(typescript@6.0.3)
       stylelint-config-hope:
         specifier: 12.1.0
-        version: 12.1.0(postcss@8.5.29)(stylelint@17.16.0(typescript@6.0.3))
+        version: 12.1.0(postcss@8.5.29)(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3))
       tsdown:
         specifier: 0.23.1
         version: 0.23.1(typescript@6.0.3)(unrun@0.3.1)
@@ -3509,14 +3509,14 @@ snapshots:
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
 
-  ali-oss@6.23.0:
+  ali-oss@6.23.0(supports-color@10.2.2):
     dependencies:
       address: 1.2.2
       agentkeepalive: 3.5.3
       bowser: 1.9.4
       copy-to: 2.0.1
       dateformat: 2.2.0
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       destroy: 1.2.0
       end-or-error: 1.0.1
       get-ready: 1.0.0
@@ -3767,21 +3767,25 @@ snapshots:
 
   dateformat@2.2.0: {}
 
-  debug-fabulous@1.1.0:
+  debug-fabulous@1.1.0(supports-color@10.2.2):
     dependencies:
-      debug: 3.2.7
+      debug: 3.2.7(supports-color@10.2.2)
       memoizee: 0.4.17
       object-assign: 4.1.1
     transitivePeerDependencies:
       - supports-color
 
-  debug@3.2.7:
+  debug@3.2.7(supports-color@10.2.2):
     dependencies:
       ms: 2.1.3
+    optionalDependencies:
+      supports-color: 10.2.2
 
-  debug@4.4.3:
+  debug@4.4.3(supports-color@10.2.2):
     dependencies:
       ms: 2.1.3
+    optionalDependencies:
+      supports-color: 10.2.2
 
   default-user-agent@1.0.0:
     dependencies:
@@ -4140,14 +4144,14 @@ snapshots:
       replacestream: 4.0.3
       yargs-parser: 22.0.0
 
-  gulp-sourcemaps@3.0.0:
+  gulp-sourcemaps@3.0.0(supports-color@10.2.2):
     dependencies:
       '@gulp-sourcemaps/identity-map': 2.0.1
       '@gulp-sourcemaps/map-sources': 1.0.0
       acorn: 6.4.2
       convert-source-map: 1.9.0
       css: '@adobe/css-tools@4.5.0'
-      debug-fabulous: 1.1.0
+      debug-fabulous: 1.1.0(supports-color@10.2.2)
       detect-newline: 2.1.0
       graceful-fs: 4.2.11
       source-map: 0.6.1
@@ -4255,9 +4259,9 @@ snapshots:
 
   ini@6.0.0: {}
 
-  innenu-generator@0.25.0:
+  innenu-generator@0.25.0(supports-color@10.2.2):
     dependencies:
-      ali-oss: 6.23.0
+      ali-oss: 6.23.0(supports-color@10.2.2)
       js-yaml: 5.4.3
       upath: 3.0.8
       zod: 4.6.6
@@ -4971,48 +4975,48 @@ snapshots:
 
   strip-bom-string@1.0.0: {}
 
-  stylelint-config-hope@12.1.0(postcss@8.5.29)(stylelint@17.16.0(typescript@6.0.3)):
+  stylelint-config-hope@12.1.0(postcss@8.5.29)(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3)):
     dependencies:
-      stylelint: 17.16.0(typescript@6.0.3)
-      stylelint-config-standard: 40.0.0(stylelint@17.16.0(typescript@6.0.3))
-      stylelint-config-standard-scss: 17.0.0(postcss@8.5.29)(stylelint@17.16.0(typescript@6.0.3))
-      stylelint-order: 8.1.2(stylelint@17.16.0(typescript@6.0.3))
+      stylelint: 17.16.0(supports-color@10.2.2)(typescript@6.0.3)
+      stylelint-config-standard: 40.0.0(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3))
+      stylelint-config-standard-scss: 17.0.0(postcss@8.5.29)(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3))
+      stylelint-order: 8.1.2(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3))
     transitivePeerDependencies:
       - postcss
 
-  stylelint-config-recommended-scss@17.0.1(postcss@8.5.29)(stylelint@17.16.0(typescript@6.0.3)):
+  stylelint-config-recommended-scss@17.0.1(postcss@8.5.29)(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3)):
     dependencies:
       postcss-scss: 4.0.9(postcss@8.5.29)
-      stylelint: 17.16.0(typescript@6.0.3)
-      stylelint-config-recommended: 18.0.0(stylelint@17.16.0(typescript@6.0.3))
-      stylelint-scss: 7.3.0(stylelint@17.16.0(typescript@6.0.3))
+      stylelint: 17.16.0(supports-color@10.2.2)(typescript@6.0.3)
+      stylelint-config-recommended: 18.0.0(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3))
+      stylelint-scss: 7.3.0(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3))
     optionalDependencies:
       postcss: 8.5.29
 
-  stylelint-config-recommended@18.0.0(stylelint@17.16.0(typescript@6.0.3)):
+  stylelint-config-recommended@18.0.0(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3)):
     dependencies:
-      stylelint: 17.16.0(typescript@6.0.3)
+      stylelint: 17.16.0(supports-color@10.2.2)(typescript@6.0.3)
 
-  stylelint-config-standard-scss@17.0.0(postcss@8.5.29)(stylelint@17.16.0(typescript@6.0.3)):
+  stylelint-config-standard-scss@17.0.0(postcss@8.5.29)(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3)):
     dependencies:
-      stylelint: 17.16.0(typescript@6.0.3)
-      stylelint-config-recommended-scss: 17.0.1(postcss@8.5.29)(stylelint@17.16.0(typescript@6.0.3))
-      stylelint-config-standard: 40.0.0(stylelint@17.16.0(typescript@6.0.3))
+      stylelint: 17.16.0(supports-color@10.2.2)(typescript@6.0.3)
+      stylelint-config-recommended-scss: 17.0.1(postcss@8.5.29)(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3))
+      stylelint-config-standard: 40.0.0(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3))
     optionalDependencies:
       postcss: 8.5.29
 
-  stylelint-config-standard@40.0.0(stylelint@17.16.0(typescript@6.0.3)):
+  stylelint-config-standard@40.0.0(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3)):
     dependencies:
-      stylelint: 17.16.0(typescript@6.0.3)
-      stylelint-config-recommended: 18.0.0(stylelint@17.16.0(typescript@6.0.3))
+      stylelint: 17.16.0(supports-color@10.2.2)(typescript@6.0.3)
+      stylelint-config-recommended: 18.0.0(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3))
 
-  stylelint-order@8.1.2(stylelint@17.16.0(typescript@6.0.3)):
+  stylelint-order@8.1.2(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3)):
     dependencies:
       postcss: 8.5.29
       postcss-sorting: 10.0.0(postcss@8.5.29)
-      stylelint: 17.16.0(typescript@6.0.3)
+      stylelint: 17.16.0(supports-color@10.2.2)(typescript@6.0.3)
 
-  stylelint-scss@7.3.0(stylelint@17.16.0(typescript@6.0.3)):
+  stylelint-scss@7.3.0(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3)):
     dependencies:
       '@csstools/css-calc': 3.4.3(@csstools/css-parser-algorithms@4.0.2(@csstools/css-tokenizer@4.0.2))(@csstools/css-tokenizer@4.0.2)
       '@csstools/css-parser-algorithms': 4.0.2(@csstools/css-tokenizer@4.0.2)
@@ -5025,9 +5029,9 @@ snapshots:
       postcss-resolve-nested-selector: 0.1.7
       postcss-selector-parser: 7.1.6
       postcss-value-parser: 4.2.0
-      stylelint: 17.16.0(typescript@6.0.3)
+      stylelint: 17.16.0(supports-color@10.2.2)(typescript@6.0.3)
 
-  stylelint@17.16.0(typescript@6.0.3):
+  stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3):
     dependencies:
       '@csstools/css-calc': 3.4.3(@csstools/css-parser-algorithms@4.0.2(@csstools/css-tokenizer@4.0.2))(@csstools/css-tokenizer@4.0.2)
       '@csstools/css-parser-algorithms': 4.0.2(@csstools/css-tokenizer@4.0.2)
@@ -5040,7 +5044,7 @@ snapshots:
       cosmiconfig: 9.0.2(typescript@6.0.3)
       css-functions-list: 3.3.3
       css-tree: 3.2.1
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       fast-glob: 3.3.3
       fastest-levenshtein: 1.0.16
       file-entry-cache: 11.1.5
