@@ -32,8 +32,8 @@
     "@mptool/all": "0.19.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "21.2.3",
-    "@commitlint/config-conventional": "21.2.3",
+    "@commitlint/cli": "21.2.4",
+    "@commitlint/config-conventional": "21.2.4",
     "@mr-hope/tsconfig": "0.0.4",
     "del": "9.0.1",
     "gulp": "5.0.1",
