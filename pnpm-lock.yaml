@@ -172,8 +172,8 @@ importers:
   .:
     dependencies:
       '@mptool/all':
-        specifier: 0.19.0
-        version: 0.19.0(miniprogram-api-typings@5.2.3)
+        specifier: 0.20.0
+        version: 0.20.0(miniprogram-api-typings@5.2.3)
     devDependencies:
       '@commitlint/cli':
         specifier: 21.2.4
@@ -476,10 +476,13 @@ packages:
     resolution: {integrity: sha512-oV4PyZfwJNtmFWhvlJLqYIX1Nn22ML8FZpS16ZUKv0hg7414xV1fjsGqxQzLT2dyK92TKxsJSwMOd7VNHAtPmA==}
     engines: {node: '>= 12'}
 
-  '@mptool/all@0.19.0':
-    resolution: {integrity: sha512-5FFd9xrds0bTHCaOuDI9OkfsUjqmude1NlxfjiEipd4GDg5CPTH1SrcfITc8IaWCtn0U2gmR9OYa7Cj2/Rnojw==}
+  '@mptool/all@0.20.0':
+    resolution: {integrity: sha512-S5Jh2hcjLrME8lhSif60KLrVBstHxQrqTosy9oatDW1iriFHdx25K/JRoWDHc8NNDS5Y18ueSVcXMC173HbouQ==}
     peerDependencies:
       miniprogram-api-typings: ^5.0.0
+    peerDependenciesMeta:
+      miniprogram-api-typings:
+        optional: true
 
   '@mr-hope/tsconfig@0.0.4':
     resolution: {integrity: sha512-sHD3OmpHV4hxZDTjdp/0hyUifITCwEN4xHvYQkl779mtpeDZOVj69kj+SJ5+nav+3m9EUx4Q1MgxzQbZlaxwPA==}
@@ -3268,8 +3271,8 @@ snapshots:
 
   '@mattiasbuelens/web-streams-adapter@0.1.0': {}
 
-  '@mptool/all@0.19.0(miniprogram-api-typings@5.2.3)':
-    dependencies:
+  '@mptool/all@0.20.0(miniprogram-api-typings@5.2.3)':
+    optionalDependencies:
       miniprogram-api-typings: 5.2.3
 
   '@mr-hope/tsconfig@0.0.4(typescript@6.0.3)':
