@@ -10,7 +10,7 @@ allowBuilds:
   unrs-resolver: true
 
 overrides:
-  css: npm:@adobe/css-tools@^4.4.3
+  css: npm:@adobe/css-tools@^5.0.0
   postcss: ^8.5.10
   vinyl-fs: ^4.0.2
 
