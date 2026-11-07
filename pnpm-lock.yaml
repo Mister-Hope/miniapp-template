@@ -163,7 +163,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  css: npm:@adobe/css-tools@^4.4.3
+  css: npm:@adobe/css-tools@^5.0.0
   postcss: ^8.5.10
   vinyl-fs: ^4.0.2
 
@@ -271,8 +271,8 @@ importers:
 
 packages:
 
-  '@adobe/css-tools@4.5.0':
-    resolution: {integrity: sha512-6OzddxPio9UiWTCemp4N8cYLV2ZN1ncRnV1cVGtve7dhPOtRkleRyx32GQCYSwDYgaHU3USMm84tNsvKzRCa1Q==}
+  '@adobe/css-tools@5.0.0':
+    resolution: {integrity: sha512-HNzgFxupiKEL0rCMkIcjJaqktW91V9hz/keDROHjvzVWA3AKG557RoeD3lnhFNZtRqzJS0cMvoOPO7VOYyBHDg==}
 
   '@babel/code-frame@7.29.7':
     resolution: {integrity: sha512-Aup7aUOfpbAUg2ROOJN6Iw5f9DMBlzu0mIkm/malLQFN/YQgO48wCj0Kxa3sEHJvPVFg7siR+qRInwXd2qhQKw==}
@@ -3037,7 +3037,10 @@ packages:
 
 snapshots:
 
-  '@adobe/css-tools@4.5.0': {}
+  '@adobe/css-tools@5.0.0':
+    dependencies:
+      postcss: 8.5.32
+      postcss-safe-parser: 7.1.0(postcss@8.5.32)
 
   '@babel/code-frame@7.29.7':
     dependencies:
@@ -4328,7 +4331,7 @@ snapshots:
       '@gulp-sourcemaps/map-sources': 1.0.0
       acorn: 6.4.2
       convert-source-map: 1.9.0
-      css: '@adobe/css-tools@4.5.0'
+      css: '@adobe/css-tools@5.0.0'
       debug-fabulous: 1.1.0(supports-color@10.2.2)
       detect-newline: 2.1.0
       graceful-fs: 4.2.11
