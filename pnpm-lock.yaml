@@ -173,7 +173,7 @@ importers:
     dependencies:
       '@mptool/all':
         specifier: 0.20.0
-        version: 0.20.0(miniprogram-api-typings@5.2.3)
+        version: 0.20.0(miniprogram-api-typings@5.3.1)
     devDependencies:
       '@commitlint/cli':
         specifier: 21.2.4
@@ -212,8 +212,8 @@ importers:
         specifier: 0.25.0
         version: 0.25.0(supports-color@10.2.2)
       miniprogram-api-typings:
-        specifier: 5.2.3
-        version: 5.2.3
+        specifier: 5.3.1
+        version: 5.3.1
       nano-staged:
         specifier: 1.0.2
         version: 1.0.2
@@ -2152,8 +2152,8 @@ packages:
   minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
 
-  miniprogram-api-typings@5.2.3:
-    resolution: {integrity: sha512-KVcNSfR2VmRtz35rxkjLxE92HlsBnbT6NsKyTcDX3ebbTKAsAiTOFO1mRM82Xbe848dnEYqNGzaD48LMEvGytw==}
+  miniprogram-api-typings@5.3.1:
+    resolution: {integrity: sha512-2CirO+C1z5RmKXDqTUSNbuyouHf5d0/KJTt+Qqi1EsiQYs8jlYhq7yWjp6EdTcJpvZzjuefZQCcDixYbrgIqow==}
 
   mkdirp@0.5.6:
     resolution: {integrity: sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==}
@@ -3295,9 +3295,9 @@ snapshots:
 
   '@mattiasbuelens/web-streams-adapter@0.1.0': {}
 
-  '@mptool/all@0.20.0(miniprogram-api-typings@5.2.3)':
+  '@mptool/all@0.20.0(miniprogram-api-typings@5.3.1)':
     optionalDependencies:
-      miniprogram-api-typings: 5.2.3
+      miniprogram-api-typings: 5.3.1
 
   '@mr-hope/tsconfig@0.0.4(typescript@7.0.2)':
     dependencies:
@@ -4658,7 +4658,7 @@ snapshots:
 
   minimist@1.2.8: {}
 
-  miniprogram-api-typings@5.2.3: {}
+  miniprogram-api-typings@5.3.1: {}
 
   mkdirp@0.5.6:
     dependencies:
