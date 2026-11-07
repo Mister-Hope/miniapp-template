@@ -257,8 +257,8 @@ importers:
         specifier: 2.0.0
         version: 2.0.0(@cloudbase/adapter-interface@0.7.1)(@cloudbase/utilities@3.0.4)(jsonwebtoken@9.0.3)(web-streams-polyfill@4.3.0)(ws@8.22.1)
       '@cloudbase/js-sdk':
-        specifier: 3.10.4
-        version: 3.10.4
+        specifier: 3.11.0
+        version: 3.11.0
 
   cloud/login:
     dependencies:
@@ -266,8 +266,8 @@ importers:
         specifier: 2.0.0
         version: 2.0.0(@cloudbase/adapter-interface@0.7.1)(@cloudbase/utilities@3.0.4)(jsonwebtoken@9.0.3)(web-streams-polyfill@4.3.0)(ws@8.22.1)
       '@cloudbase/js-sdk':
-        specifier: 3.10.4
-        version: 3.10.4
+        specifier: 3.11.0
+        version: 3.11.0
 
 packages:
 
@@ -306,8 +306,8 @@ packages:
   '@cloudbase/adapter-wx_mp@1.4.1':
     resolution: {integrity: sha512-EEdsmANIh0TDeW2OAbjt+urpvX2xIr9U3HyqKyA2BVTJwvpgjKbONOIC7Ls5wqEvQ92ueeJ3vFCYrH1zlpmA+w==}
 
-  '@cloudbase/js-sdk@3.10.4':
-    resolution: {integrity: sha512-9j+N4fw44aCsmMpcZOng1iCgIIAIYeMofo7opMEwaYsovyZpY5UQ6GWs3eCKi20nVwAjqiv1BWwsMEfaAVfhog==}
+  '@cloudbase/js-sdk@3.11.0':
+    resolution: {integrity: sha512-lYevEY/Md5Mo1k/kbADpqCQRdIoZx6L5boYDPFiUJQuU1Nm8u3crUiYAUJRUkwjee4Wnx7uio6wnRHoaTMX74Q==}
 
   '@cloudbase/signature-nodejs@2.2.2':
     resolution: {integrity: sha512-hPqxAaqRh5MVXNv2GjkzhWc2WU/XqMUgvDjjl6y2LT7W21WlmhGJodSbu99vH9xAhY/918veQr+gqhj1xCrGtg==}
@@ -3076,7 +3076,7 @@ snapshots:
       '@cloudbase/adapter-interface': 0.7.2
       web-streams-polyfill: 4.3.0
 
-  '@cloudbase/js-sdk@3.10.4':
+  '@cloudbase/js-sdk@3.11.0':
     dependencies:
       '@cloudbase/adapter-interface': 0.7.2
       '@cloudbase/adapter-wx_mp': 1.4.1
