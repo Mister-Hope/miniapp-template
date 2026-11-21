@@ -203,8 +203,8 @@ importers:
         specifier: 6.0.0-alpha.1
         version: 6.0.0-alpha.1(typescript@7.0.2)
       gulp5-sass-plugin:
-        specifier: 2.1.0
-        version: 2.1.0(gulp@5.0.1)
+        specifier: 2.2.0
+        version: 2.2.0(gulp@5.0.1)
       husky:
         specifier: 9.1.7
         version: 9.1.7
@@ -1804,9 +1804,9 @@ packages:
     peerDependencies:
       typescript: '~2.7.1 || >=2.8.0-dev || >=2.9.0-dev || ~3.0.0 || >=3.0.0-dev || >=3.1.0-dev || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.7.0-dev '
 
-  gulp5-sass-plugin@2.1.0:
-    resolution: {integrity: sha512-i672SaO/sPeclO0aWNTS3frndxt6qnybcO5vaAjf6yLa6CrjOhfTt4YLddac7icBwSdxM2raKfFCskqCbaKuQw==}
-    engines: {node: '>=14'}
+  gulp5-sass-plugin@2.2.0:
+    resolution: {integrity: sha512-j04u6RW2Hc0q1ZPBTDZgWfO+q1rOmBJe3fnqqNvh8oRxUz0K0Joq5cZxH34TZyXUYwrrq12ODbvXlfESdZcheQ==}
+    engines: {node: '>=20.19.0'}
     peerDependencies:
       gulp: ^5.0.0
 
@@ -2528,8 +2528,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sass@1.107.1:
-    resolution: {integrity: sha512-aJ1/LvxOOb04YhmiBjzZn3jVwdHKol+OVhoMV6fFl02fF9T3i+5Mg9l/CnzqtM+NX5Jn5o3lAbs/ZJivTCLHfQ==}
+  sass@1.108.2:
+    resolution: {integrity: sha512-kugK8djotnG9HQRPTOf36asKYlxg8rWWsNLYHOgWDIVOiZQqlRfKBgF4XXM6kfw146kIDMvm57B4GIkvDSyTzA==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -4351,14 +4351,14 @@ snapshots:
       - bare-abort-controller
       - react-native-b4a
 
-  gulp5-sass-plugin@2.1.0(gulp@5.0.1):
+  gulp5-sass-plugin@2.2.0(gulp@5.0.1):
     dependencies:
+      '@types/vinyl': 2.0.12
       gulp: 5.0.1
       picocolors: 1.1.1
       plugin-error: 2.0.1
       replace-ext: 2.0.0
-      sass: 1.107.1
-      source-map-js: 1.2.2
+      sass: 1.108.2
       strip-ansi: 7.2.0
       vinyl: 3.0.1
       vinyl-sourcemaps-apply: 0.2.1
@@ -5015,7 +5015,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass@1.107.1:
+  sass@1.108.2:
     dependencies:
       chokidar: 5.0.0
       immutable: 5.1.9
