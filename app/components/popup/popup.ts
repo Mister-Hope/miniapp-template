@@ -25,7 +25,7 @@ Component({
     // 是否展示对话框
     show: {
       type: Boolean,
-      default: false,
+      value: false,
     },
   },
 

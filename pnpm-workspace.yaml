@@ -11,7 +11,7 @@ allowBuilds:
 
 overrides:
   css: npm:@adobe/css-tools@^4.4.3
-  postcss: ^8.5.10
+  postcss: ^8.5.33
   vinyl-fs: ^4.0.2
 
 virtualStoreType: global
