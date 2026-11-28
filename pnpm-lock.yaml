@@ -266,8 +266,8 @@ importers:
         specifier: 2.0.0
         version: 2.0.0(@cloudbase/adapter-interface@0.7.1)(@cloudbase/utilities@3.0.4)(jsonwebtoken@9.0.3)(web-streams-polyfill@4.5.1)(ws@8.23.0)
       '@cloudbase/js-sdk':
-        specifier: 3.11.1
-        version: 3.11.1
+        specifier: 3.11.2
+        version: 3.11.2
 
   cloud/login:
     dependencies:
@@ -275,8 +275,8 @@ importers:
         specifier: 2.0.0
         version: 2.0.0(@cloudbase/adapter-interface@0.7.1)(@cloudbase/utilities@3.0.4)(jsonwebtoken@9.0.3)(web-streams-polyfill@4.5.1)(ws@8.23.0)
       '@cloudbase/js-sdk':
-        specifier: 3.11.1
-        version: 3.11.1
+        specifier: 3.11.2
+        version: 3.11.2
 
 packages:
 
@@ -294,8 +294,8 @@ packages:
   '@cloudbase/adapter-interface@0.7.1':
     resolution: {integrity: sha512-BjHTAvIMSLxbp26SeT6qLiSSBygz3kAVno/PMwwBwjgzVkVUvuZGVcvf1mhHxY/BjdRGLrd6X60OgvymV/aAUw==}
 
-  '@cloudbase/adapter-interface@0.7.2':
-    resolution: {integrity: sha512-6bmBSUPw/Z9LAqx5h95YFZMhxjt+CRZ+z2/RqDY4zavj0nViXQ3xi7Hcdbw+uUKt0vOVjrjz/SmGAJxiDIluFg==}
+  '@cloudbase/adapter-interface@0.8.0':
+    resolution: {integrity: sha512-pOlyAw6o+jIY930CPf3TTcrnvp3lfEORXVkcgqNbKoDxtNvCE/B0RDw1Ba6o3hb+nlXaxPn0Ij3X8snd0vG0dQ==}
 
   '@cloudbase/adapter-node@2.0.0':
     resolution: {integrity: sha512-pqpJ00YOOW8mH8UTh3teoR6p2aP9nBipVoC9OIoXxB3VGrLozBF21s32Vbm/guMxQtqOv2mRg95h1trUAs/dsA==}
@@ -306,11 +306,11 @@ packages:
       web-streams-polyfill: ^4.1.0
       ws: ^8.18.0
 
-  '@cloudbase/adapter-wx_mp@1.4.1':
-    resolution: {integrity: sha512-EEdsmANIh0TDeW2OAbjt+urpvX2xIr9U3HyqKyA2BVTJwvpgjKbONOIC7Ls5wqEvQ92ueeJ3vFCYrH1zlpmA+w==}
+  '@cloudbase/adapter-wx_mp@1.5.0':
+    resolution: {integrity: sha512-lV14OZgpW9uQ+cYomtIllqJn1M54UYVvzfUgA07mJ07qCrv7UlBPwDCiJO5U/sBr0I58VZTqeAXgogQua1bleg==}
 
-  '@cloudbase/js-sdk@3.11.1':
-    resolution: {integrity: sha512-Zpr2jjiibIWOiUzuSMobCNZAohqQmmCPWkWP+M7fJ0Mv1QTdk8Q/mGJ1XyWsk1r2g1xWuqhnu+1p3VyNBaJxMg==}
+  '@cloudbase/js-sdk@3.11.2':
+    resolution: {integrity: sha512-UQCambR3ZsX1Ys/RibxXi380sA6KoZEjhkGgc73ySSkHae5UmEKbJBa0kXrwd80qnt5rKxmIsvoeqXCvytVhzw==}
 
   '@cloudbase/signature-nodejs@2.2.2':
     resolution: {integrity: sha512-hPqxAaqRh5MVXNv2GjkzhWc2WU/XqMUgvDjjl6y2LT7W21WlmhGJodSbu99vH9xAhY/918veQr+gqhj1xCrGtg==}
@@ -2516,9 +2516,6 @@ packages:
   text-decoder@1.2.7:
     resolution: {integrity: sha512-vlLytXkeP4xvEq2otHeJfSQIRyWxo/oZGEbXrtEEF9Hnmrdly59sUbzZ/QgyWuLYHctCHxFF4tRQZNQ9k60ExQ==}
 
-  text-encoding-shim@1.0.5:
-    resolution: {integrity: sha512-H7yYW+jRn4yhu60ygZ2f/eMhXPITRt4QSUTKzLm+eCaDsdX8avmgWpmtmHAzesjBVUTAypz9odu5RKUjX5HNYA==}
-
   textextensions@3.3.0:
     resolution: {integrity: sha512-mk82dS8eRABNbeVJrEiN5/UMSCliINAuz8mkUwH4SwslkNP//gbEzlWNS5au0z5Dpx40SQxzqZevZkn+WYJ9Dw==}
     engines: {node: '>=8'}
@@ -2818,7 +2815,7 @@ snapshots:
 
   '@cloudbase/adapter-interface@0.7.1': {}
 
-  '@cloudbase/adapter-interface@0.7.2': {}
+  '@cloudbase/adapter-interface@0.8.0': {}
 
   '@cloudbase/adapter-node@2.0.0(@cloudbase/adapter-interface@0.7.1)(@cloudbase/utilities@3.0.4)(jsonwebtoken@9.0.3)(web-streams-polyfill@4.5.1)(ws@8.23.0)':
     dependencies:
@@ -2828,22 +2825,21 @@ snapshots:
       web-streams-polyfill: 4.5.1
       ws: 8.23.0
 
-  '@cloudbase/adapter-wx_mp@1.4.1':
+  '@cloudbase/adapter-wx_mp@1.5.0':
     dependencies:
-      '@cloudbase/adapter-interface': 0.7.2
+      '@cloudbase/adapter-interface': 0.8.0
       web-streams-polyfill: 4.5.1
 
-  '@cloudbase/js-sdk@3.11.1':
+  '@cloudbase/js-sdk@3.11.2':
     dependencies:
-      '@cloudbase/adapter-interface': 0.7.2
-      '@cloudbase/adapter-wx_mp': 1.4.1
+      '@cloudbase/adapter-interface': 0.8.0
+      '@cloudbase/adapter-wx_mp': 1.5.0
       '@cloudbase/wx-cloud-client-sdk': 1.8.11
       '@mattiasbuelens/web-streams-adapter': 0.1.0
       bson: 6.10.4
       jwt-decode: 3.1.2
       lodash: 4.18.1
       regenerator-runtime: 0.14.1
-      text-encoding-shim: 1.0.5
       web-streams-polyfill: 4.5.1
     optionalDependencies:
       '@cloudbase/signature-nodejs': 2.2.2
@@ -2875,7 +2871,7 @@ snapshots:
 
   '@cloudbase/wx-cloud-client-sdk@1.8.11':
     dependencies:
-      '@cloudbase/adapter-wx_mp': 1.4.1
+      '@cloudbase/adapter-wx_mp': 1.5.0
       core-js-pure: 3.51.0
 
   '@commitlint/cli@21.2.4(conventional-commits-parser@7.1.4)(typescript@6.0.3)':
@@ -4890,8 +4886,6 @@ snapshots:
       b4a: 1.9.0
     transitivePeerDependencies:
       - react-native-b4a
-
-  text-encoding-shim@1.0.5: {}
 
   textextensions@3.3.0: {}
 
